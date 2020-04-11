@@ -38,23 +38,22 @@ const Layout = ({ children }) => {
       <Navbar />
 
       <div className="row mt-2">
-        <div className="col-md-8 d-flex">
-          <div className="content-box-main d-flex flex-column container-fluid">
-            <main>{children}</main>
-          </div>
+        <div className="col-md-8 ">
+          {/* <div className="content-box-main d-flex flex-column container-fluid"> */}
+          <main>{children}</main>
+          {/* </div> */}
         </div>
         <div className="col-md-4">
           <Sidebar />
         </div>
       </div>
-
-      <main>{children}</main>
+      {/* <main>{children}</main> */}
       <Footer />
-      <footer>
+      {/* <footer>
         © {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+      </footer> */}
     </div>
   )
 }

@@ -1,13 +1,14 @@
 import React from "react"
 import "./layout.css"
+import { Link } from "gatsby"
 
 const Navbar = () => (
   <header>
-    <div class="row">
-      <div class="col-md-12 mt-3">
-        <nav class="navbar navbar-expand-lg navbar-light  bg-light rounded">
+    <div className="row">
+      <div className="col-md-12 mt-3">
+        <nav className="navbar navbar-expand-lg navbar-light  bg-light rounded">
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarNav"
@@ -15,25 +16,37 @@ const Navbar = () => (
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#home">
-                  Home <span class="sr-only">(current)</span>
-                </a>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link
+                  to="/"
+                  style={{ textDecoration: "none" }}
+                  className="nav-link"
+                >
+                  Home <span className="sr-only">(current)</span>
+                </Link>
               </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#projects-section">
+              <li className="nav-item">
+                <Link
+                  to="/about/"
+                  style={{ textDecoration: "none" }}
+                  className="nav-link"
+                >
                   About
-                </a>
+                </Link>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skills-section">
+              <li className="nav-item">
+                <Link
+                  to="/tags/"
+                  style={{ textDecoration: "none" }}
+                  className="nav-link"
+                >
                   Tags
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
