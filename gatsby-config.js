@@ -32,5 +32,3 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
-
-require("./src/styles/global.css")
