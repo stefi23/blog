@@ -18,6 +18,7 @@ const Banner = () => {
   return (
     <Img
       className="rounded mb-0"
+      alt="Banner image with my name: Stefi Rosca"
       fluid={data.placeholderImage.childImageSharp.fluid}
     />
   )
