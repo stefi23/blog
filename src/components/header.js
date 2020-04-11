@@ -3,13 +3,20 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
+  <header>
+    <div className="row" style={{ marginTop: "20px" }}>
+      <div className="col-md-12">
+        <div className="header">
+          <img
+            src="https://github.com/stefi23/MyPortfolio/blob/master/YouTube%20Cover%20Stefi.jpg?raw=true"
+            alt="Banner image with my name: Stefi Rosca"
+            className="rounded mb-0"
+          />
+          {/* <Banner /> */}
+        </div>
+      </div>
+    </div>
+    {/* <div
       style={{
         margin: `0 auto`,
         maxWidth: 960,
@@ -27,7 +34,7 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-    </div>
+    </div> */}
   </header>
 )
 

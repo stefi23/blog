@@ -5,8 +5,9 @@ html {
 }
 body {
   margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  background-color: #a3dbde !important;
 }
 article,
 aside,
@@ -39,14 +40,14 @@ progress {
 template {
   display: none;
 }
-a {
+/* a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
-}
+} */
 a:active,
-a:hover {
+/* a:hover {
   outline-width: 0;
-}
+} */
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
@@ -332,7 +333,7 @@ hgroup {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
-ul {
+/* ul {
   margin-left: 1.45rem;
   margin-right: 0;
   margin-top: 0;
@@ -343,7 +344,7 @@ ul {
   margin-bottom: 1.45rem;
   list-style-position: outside;
   list-style-image: none;
-}
+} */
 ol {
   margin-left: 1.45rem;
   margin-right: 0;
@@ -508,10 +509,10 @@ dt {
 th {
   font-weight: bold;
 }
-li {
+/* li {
   margin-bottom: calc(1.45rem / 2);
-}
-ol li {
+} */
+/* ol li {
   padding-left: 0;
 }
 ul li {
@@ -526,11 +527,11 @@ li > ul {
   margin-left: 1.45rem;
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
-}
+} */
 blockquote *:last-child {
   margin-bottom: 0;
 }
-li *:last-child {
+/* li *:last-child {
   margin-bottom: 0;
 }
 p *:last-child {
@@ -538,7 +539,7 @@ p *:last-child {
 }
 li > p {
   margin-bottom: calc(1.45rem / 2);
-}
+} */
 code {
   font-size: 0.85rem;
   line-height: 1.45rem;
@@ -619,4 +620,49 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.navbar-light .nav-item.active .nav-link {
+  color: #581845 !important;
+  font-weight: bold !important;
+}
+
+/* .navbar-light .nav-item .nav-link {
+  color: #581845 !important;
+} */
+
+.nav-link {
+  color: #581845 !important;
+  padding: 15px !important;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 15px !important;
+
+  /* font-family: "Open Sans", sans-serif; */
+}
+.navbar-expand-lg .navbar-collapse {
+  padding: 5px;
+}
+
+.bg-light {
+  padding: 0px !important;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+  background-color: #581845 !important;
+  text-decoration: none !important;
+  border-radius: 5% !important;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  padding: 0px !important;
+}
+
+a:link {
+  color: #581845 !important;
+}
+
+/* visited link */
+a:visited {
+  color: #581845 !important;
 }
