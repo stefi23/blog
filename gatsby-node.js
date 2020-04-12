@@ -7,8 +7,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode, basePath: `pages` })
     let match = slug.replace("/content", "")
-    console.log("Slug: ", slug)
-    console.log("Match: ", match)
+
     createNodeField({
       node,
       name: `slug`,
@@ -65,21 +64,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   // Extract tag data from query
   const tags = result.data.tagsGroup.group
 
-  // exports.createPages = async ({ graphql, actions }) => {
-  //   const { createPage } = actions
-  //   const result = await graphql(`
-  //     query {
-  //       allMarkdownRemark {
-  //         edges {
-  //           node {
-  //             fields {
-  //               slug
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   `)
   // Make tag pages
   tags.forEach(tag => {
     createPage({
@@ -91,49 +75,3 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   })
 }
-
-// const path = require(`path`)
-// const { createFilePath } = require(`gatsby-source-filesystem`)
-
-// exports.onCreateNode = ({ node, getNode, actions }) => {
-//   const { createNodeField } = actions
-//   if (node.internal.type === `MarkdownRemark`) {
-//     const slug = createFilePath({ node, getNode, basePath: `pages` })
-//     let match = slug.replace("/content", "")
-//     console.log("M: ", match)
-//     createNodeField({
-//       node,
-//       name: `slug`,
-//       value: match,
-//     })
-//   }
-// }
-
-// exports.createPages = async ({ graphql, actions }) => {
-//   const { createPage } = actions
-//   const result = await graphql(`
-//     query {
-//       allMarkdownRemark {
-//         edges {
-//           node {
-//             fields {
-//               slug
-//             }
-//           }
-//         }
-//       }
-//     }
-//   `)
-
-//   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-//     createPage({
-//       path: node.fields.slug,
-//       component: path.resolve(`./src/templates/blog-post.js`),
-//       context: {
-//         // Data passed to context is available
-//         // in page queries as GraphQL variables.
-//         slug: node.fields.slug,
-//       },
-//     })
-//   })
-// }
