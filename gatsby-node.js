@@ -90,21 +90,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     })
   })
-
-  result.data.postsRemark.edges.forEach(({ node }) => {
-    console.log("path:", node.fields.slug)
-    createPage({
-      // path: blogPostTemplate,
-      path: node.fields.slug,
-      component: path.resolve(`./src/templates/blog-post.js`),
-      context: {
-        // Data passed to context is available
-        // in page queries as GraphQL variables.
-        slug: node.fields.slug,
-      },
-    }),
-      console.log(slug)
-  })
 }
 
 // const path = require(`path`)
