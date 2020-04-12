@@ -9,7 +9,7 @@ export default ({ data }) => {
     return <h2>Sorry, couldn't find that!</h2>
   }
   const post = data.markdownRemark
-  console.log(data)
+
   return (
     <Layout>
       <SEO title="Home" />

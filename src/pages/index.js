@@ -4,8 +4,6 @@ import SEO from "../components/seo"
 import { Link, graphql } from "gatsby"
 
 const IndexPage = ({ data }) => {
-  console.log(data)
-
   return (
     <Layout>
       <SEO title="Home" />
@@ -46,35 +44,6 @@ const IndexPage = ({ data }) => {
           </div>
         </div>
       ))}
-
-      {/* <span
-            style={{
-              color: "red",
-              fontFamily: "Open Sans, sans-serif",
-              color: "#8f3774",
-              fontSize: "12px",
-            }}
-          >
-            21 March 2019
-          </span>
-          <p className="summary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque non hendrerit lacus, sit amet sodales metus. Donec sit
-            amet ligula orci. Aliquam vel porta elit. Integer ut turpis pretium,
-            efficitur leo lobortis, tempus ante. Etiam ornare nisl et velit
-            placerat posuere. Aliquam elementum commodo tempor. Integer vehicula
-            dictum laoreet.
-          </p>
-          <p>
-            Etiam ac enim lacinia, placerat dolor eget, laoreet libero. Nulla
-            porttitor, magna ut sodales semper, tortor risus pretium mi, quis
-            euismod felis ligula ac mi. Nam imperdiet dolor non quam pretium
-            posuere sit amet ac enim.{" "}
-          </p>
-          <a className="btn-bordo rounded" href="">
-            {" "}
-            Read More{" "}
-          </a> */}
     </Layout>
   )
 }
