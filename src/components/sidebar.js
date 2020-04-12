@@ -84,8 +84,8 @@ const Sidebar = ({ siteTitle }) => (
         </p>
       </div>
     </div>
-    {/* <div className="content-box-main flex-column d-flex">About Blog</div>
-    <div className="content-box-main flex-column d-flex">Tags</div>
+    {/* <div className="content-box-main flex-column d-flex">About Blog</div> */}
+    {/*<div className="content-box-main flex-column d-flex">Tags</div>
     <div className="content-box-main flex-column d-flex">Archive</div> */}
   </header>
 )

@@ -9,15 +9,6 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      {/* <div className="content-box-main d-flex flex-column container-fluid">
-      <h1>hello everyone!</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
-      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image />
-      </div>
-      <Link to="/page-2/">Go to page 2</Link>
-    </div> */}
 
       {/* <img
           src="http://lorempixel.com/700/300/city/"
@@ -45,12 +36,10 @@ const IndexPage = ({ data }) => {
                 {node.frontmatter.date}
               </span>
               <p>{node.excerpt}</p>
+              <p>Reading time: {node.timeToRead}minutes</p>
               <div className="col">
-                <Link to={node.fields.slug}>
-                  <a className="btn-bordo rounded" href="">
-                    {" "}
-                    Read More{" "}
-                  </a>
+                <Link to={node.fields.slug} className="btn-bordo rounded">
+                  Read More
                 </Link>
               </div>
             </div>
@@ -92,7 +81,10 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(
+      filter: {}
+      sort: { order: DESC, fields: frontmatter___date }
+    ) {
       totalCount
       edges {
         node {
@@ -106,6 +98,7 @@ export const query = graphql`
             slug
           }
           excerpt(pruneLength: 350)
+          timeToRead
         }
       }
     }

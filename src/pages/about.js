@@ -9,8 +9,19 @@ const About = () => (
     <SEO title="Home" />
     <div className="post-inner-content">
       <div className="article-card row">
-        <div className="col">
-          <h1>About</h1>
+        <div className="col p-3">
+          <h1
+            style={{
+              color: "#581845",
+
+              fontFamily: "Indie Flower, cursive",
+              fontWeight: "700",
+              fontSize: "40px",
+              lineHeight: "35px",
+            }}
+          >
+            Hello, I'm Stefi!
+          </h1>
 
           <p>Welcome to the about section</p>
           <Link to="/">

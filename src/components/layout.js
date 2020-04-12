@@ -13,6 +13,9 @@ import Header from "./header"
 import Navbar from "./navbar"
 import Footer from "./footer"
 import Sidebar from "./sidebar"
+
+import TagsPage from "../pages/tags"
+
 import "./layout.css"
 
 const Layout = ({ children }) => {
