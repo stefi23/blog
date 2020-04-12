@@ -672,7 +672,7 @@ pre tt:after {
 }
 
 a:link {
-  color: #581845 !important;
+  color: #581845;
 }
 
 /* visited link */
