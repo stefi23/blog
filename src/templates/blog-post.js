@@ -5,6 +5,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 export default ({ data }) => {
+  if (!data) {
+    return <h2>Sorry, couldn't find that!</h2>
+  }
   const post = data.markdownRemark
   console.log(data)
   return (
