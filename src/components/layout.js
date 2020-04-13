@@ -10,9 +10,11 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import Navbar from "./navbar"
+import MyNavbar from "./navbar"
 import Footer from "./footer"
 import Sidebar from "./sidebar"
+
+import "bootstrap/dist/css/bootstrap.min.css"
 
 import TagsPage from "../pages/tags"
 
@@ -38,7 +40,7 @@ const Layout = ({ children }) => {
       }}
     >
       <Header siteTitle={data.site.siteMetadata.title} />
-      <Navbar />
+      <MyNavbar />
 
       <div className="row mt-2">
         <div className="col-md-8 ">
