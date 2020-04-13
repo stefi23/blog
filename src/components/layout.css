@@ -660,7 +660,7 @@ pre tt:after {
   padding: 0px !important;
 }
 
-.nav-link:hover {
+.navbar-expand-lg .nav-link:hover {
   color: #ffffff !important;
   background-color: #581845 !important;
   text-decoration: none !important;
