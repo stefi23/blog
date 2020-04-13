@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <MyNavbar />
 
-      <div className="row mt-2">
+      <div className="row mt-2 ">
         <div className="col-md-8 ">
           {/* <div className="content-box-main d-flex flex-column container-fluid"> */}
           <main>{children}</main>

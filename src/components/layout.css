@@ -760,6 +760,14 @@ a:visited {
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 
+.navigation-card {
+  border-radius: 4px;
+  margin: 10px 0px;
+  background-color: white;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
 .post-inner-content {
   padding-left: 15px;
   padding-right: 15px;
@@ -782,7 +790,12 @@ a:visited {
 }
 
 .hover-bright h1:hover {
-  color: 77205d !important;
+  color: #77205d !important;
+  text-decoration: underline;
+}
+
+.hover-bright a:hover {
+  color: #77205d !important;
   text-decoration: underline;
 }
 /* .btn-read-more {
