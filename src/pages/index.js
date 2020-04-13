@@ -3,8 +3,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Link, graphql } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
+import Navigation from "../components/navigation"
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ data, pageContext }) => {
   return (
     <Layout>
       <SEO title="Home" />
@@ -25,7 +26,7 @@ const IndexPage = ({ data }) => {
             <div className="col" key={node.id}>
               <Link
                 to={node.fields.slug}
-                className="hover-bright"
+                className="hover-bordo"
                 // style={{ textDecoration: "none" }}
               >
                 {" "}
@@ -33,7 +34,6 @@ const IndexPage = ({ data }) => {
               </Link>
               <span
                 style={{
-                  color: "red",
                   fontFamily: "Open Sans, sans-serif",
                   color: "#8f3774",
                   fontSize: "12px",
@@ -52,15 +52,21 @@ const IndexPage = ({ data }) => {
           </div>
         </div>
       ))}
+      <Navigation
+        currentPage={pageContext.BlogCurrentPage}
+        totalPages={pageContext.BlogNumPages}
+      />
     </Layout>
   )
 }
 
 export const query = graphql`
-  query {
+  query($BlogSkip: Int!, $BlogLimit: Int!) {
     allMarkdownRemark(
       filter: {}
       sort: { order: DESC, fields: frontmatter___date }
+      skip: $BlogSkip
+      limit: $BlogLimit
     ) {
       totalCount
       edges {
