@@ -2,6 +2,8 @@ const path = require(`path`)
 const _ = require("lodash")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+const postPerPage = parseInt(process.env.POST_PER_PAGE) || 10
+
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
@@ -27,6 +29,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 2000
       ) {
+        totalCount
         edges {
           node {
             fields {
@@ -52,12 +55,26 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
 
+  const numPages = Math.ceil(result.data.postsRemark.totalCount / postPerPage)
   const posts = result.data.postsRemark.edges
   // Create post detail pages
   posts.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
       component: blogPostTemplate,
+    })
+  })
+
+  Array.from({ length: numPages }).forEach((_, i) => {
+    actions.createPage({
+      path: i === 0 ? "/" : `/page/${i + 1}`,
+      component: path.resolve("./src/templates/Home.js"),
+      context: {
+        BlogSkip: i * postPerPage,
+        BlogLimit: postPerPage,
+        BlogNumPages: numPages,
+        BlogCurrentPage: i + 1,
+      },
     })
   })
 
