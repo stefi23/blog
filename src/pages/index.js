@@ -23,7 +23,14 @@ const IndexPage = ({ data }) => {
               className="rounded"
             /> */}
             <div className="col" key={node.id}>
-              <h1>{node.frontmatter.title}</h1>
+              <Link
+                to={node.fields.slug}
+                className="hover-bright"
+                // style={{ textDecoration: "none" }}
+              >
+                {" "}
+                <h1>{node.frontmatter.title}</h1>
+              </Link>
               <span
                 style={{
                   color: "red",

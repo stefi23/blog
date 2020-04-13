@@ -781,6 +781,10 @@ a:visited {
   text-decoration: none;
 }
 
+.hover-bright h1:hover {
+  color: 77205d !important;
+  text-decoration: underline;
+}
 /* .btn-read-more {
   background-color: #581845;
   color: white !important;
