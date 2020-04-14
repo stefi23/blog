@@ -26,7 +26,7 @@ const IndexPage = ({ data, pageContext }) => {
             <div className="col" key={node.id}>
               <Link
                 to={node.fields.slug}
-                className="hover-bordo"
+                className="hover-bright"
                 // style={{ textDecoration: "none" }}
               >
                 {" "}
@@ -42,7 +42,10 @@ const IndexPage = ({ data, pageContext }) => {
                 {node.frontmatter.date}
               </span>
               <p>{node.excerpt}</p>
-              <p>Reading time: {node.timeToRead}minutes</p>
+              <p>
+                Reading time: {node.timeToRead}{" "}
+                {node.timeToRead == 1 ? "minute" : "minutes"}
+              </p>
               <div className="col">
                 <Link to={node.fields.slug} className="btn-bordo rounded">
                   Read More

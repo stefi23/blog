@@ -28,7 +28,7 @@ const TagsPage = ({
           <div className="col">
             <h1>Tags</h1>
 
-            <p>Welcome to the tags page</p>
+            {/* <p>Welcome to the tags page</p> */}
             <ul>
               {group.map(tag => (
                 <li key={tag.fieldValue}>

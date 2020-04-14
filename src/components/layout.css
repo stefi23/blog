@@ -346,8 +346,8 @@ hgroup {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
-/* ul {
-  margin-left: 1.45rem;
+ul {
+  /* margin-left: 1.45rem;
   margin-right: 0;
   margin-top: 0;
   padding-bottom: 0;
@@ -356,8 +356,11 @@ hgroup {
   padding-top: 0;
   margin-bottom: 1.45rem;
   list-style-position: outside;
-  list-style-image: none;
-} */
+  list-style-image: none; */
+  font-family: "Open Sans", sans-serif;
+  color: #581845;
+  font-size: 14px;
+}
 ol {
   margin-left: 1.45rem;
   margin-right: 0;
@@ -744,14 +747,14 @@ a:visited {
 
 .list-inline-center i {
   color: #6c1d55;
-  font-size: 30px;
+  font-size: 30px !important;
   padding: 0px 5px;
 }
 
 .article-card {
   /* grid-column-start: 1;
   grid-column-end: 3; */
-  padding: 20px;
+  padding: 60px 60px 40px 60px;
   margin: 10px 0px;
   /* padding: 60px 60px; */
   background-color: white;

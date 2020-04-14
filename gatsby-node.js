@@ -2,9 +2,7 @@ const path = require(`path`)
 const _ = require("lodash")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
-// const postPerPage = parseInt(process.env.POST_PER_PAGE) || 2
-
-const postPerPage = 2
+const postPerPage = parseInt(process.env.POST_PER_PAGE) || 4
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
@@ -69,13 +67,15 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   })
 
+  console.log("posts per page: ", postPerPage)
+
   Array.from({ length: numPages }).forEach((_, i) => {
     actions.createPage({
       path: i === 0 ? "/" : `/page/${i + 1}`,
       component: path.resolve("./src/pages/index.js"),
       context: {
-        BlogSkip: i * postPerPage,
         BlogLimit: postPerPage,
+        BlogSkip: i * postPerPage,
         BlogNumPages: numPages,
         BlogCurrentPage: i + 1,
       },

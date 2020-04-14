@@ -22,8 +22,13 @@ const About = () => (
           >
             Hello, I'm Stefi!
           </h1>
+          <p>
+            I am an outgoing and creative person, a sports enthusiast and a
+            world traveler, who believes everything is possible if you put
+            passion and hard work into it.
+          </p>
+          <p>More to come..</p>
 
-          <p>Welcome to the about section</p>
           <Link to="/">
             <a className="btn-bordo rounded" href="">
               {" "}
