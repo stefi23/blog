@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Stefi's Shorts`,
-    description: `Personal blog about travel and Barcelona including as well recommendations, videos and stefi's`,
+    description: `Personal blog about travel, life in Barcelona and much more`,
     author: `Stefi Rosca`,
+    image: "src/images/banner.jpg",
   },
 
   plugins: [
