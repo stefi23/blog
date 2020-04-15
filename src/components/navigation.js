@@ -29,14 +29,14 @@ export default ({ prefix = "/page/", currentPage, totalPages }) => {
         <div className="row">
           <div className="col-6 p-2 d-flex justify-content-start pl-4 hover-bright">
             <NavBtn
-              to={currentPage === 2 ? `/` : `${prefix}${currentPage - 1}`}
+              to={currentPage == 2 ? `/` : `${prefix}/${currentPage - 1}`}
               label={currentPage - 1}
-              isDisabled={currentPage === 1}
+              isDisabled={currentPage == 1}
             />
           </div>
           <div className="col-6 p-2 d-flex justify-content-end pr-4 hover-bright">
             <NavBtn
-              isDisabled={currentPage === totalPages}
+              isDisabled={currentPage == totalPages}
               to={`${prefix}/${currentPage + 1}`}
               label={currentPage + 1}
             />

@@ -6,15 +6,14 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import Navigation from "../components/navigation"
 
 const IndexPage = ({ data, pageContext }) => {
+  console.log(pageContext)
   return (
     <Layout>
       <SEO title="Home" />
-
       {/* <img
           src="http://lorempixel.com/700/300/city/"
           style={{ marginBottom: "0px" }}
         /> */}
-
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div className="post-inner-content">
           <div className="article-card row">
@@ -64,7 +63,7 @@ const IndexPage = ({ data, pageContext }) => {
 }
 
 export const query = graphql`
-  query($BlogSkip: Int!, $BlogLimit: Int!) {
+  query($BlogSkip: Int, $BlogLimit: Int) {
     allMarkdownRemark(
       filter: {}
       sort: { order: DESC, fields: frontmatter___date }
