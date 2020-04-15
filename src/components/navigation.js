@@ -31,7 +31,7 @@ export default ({ prefix = "/page/", currentPage, totalPages }) => {
             <NavBtn
               to={currentPage == 2 ? `/` : `${prefix}/${currentPage - 1}`}
               label={currentPage - 1}
-              isDisabled={currentPage == 1}
+              isDisabled={currentPage == 1 || currentPage == undefined}
             />
           </div>
           <div className="col-6 p-2 d-flex justify-content-end pr-4 hover-bright">
