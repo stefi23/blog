@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-tags-js","path":"/blog/tags/blog/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/post1/"},"frontmatter":{"title":"Welcome to my blog"}}}]}},"pageContext":{"tag":"blog"}}}
