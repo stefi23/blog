@@ -4,7 +4,9 @@ date: "2020-04-14"
 tags: ["blog"]
 ---
 
-Dear friends, enemies, stalkers and all the in between I'm finally starting my very own blog. When I was younger I had a blog hosted on blogspot and it always annoyed me that I cannot customize it as much as I want. After learning coding and about static website generaters like GatsbyJS I decided to give this a shot and create a blog without a CMS and instead markdown files. Gatsby is super cool and I am excited to start sharing more content soon.
+Dear friends, family and everyone in between,
+
+I'm finally starting my very own blog. When I was younger I had a blog hosted on blogspot and it always annoyed me that I cannot customize it as much as I want. After learning coding and about static website generaters like GatsbyJS I decided to give this a shot and create a blog without a CMS and instead markdown files. Gatsby is super cool and I am excited to start sharing more content soon.
 
 Now that we are live the challenge will be to actually write :)
 
