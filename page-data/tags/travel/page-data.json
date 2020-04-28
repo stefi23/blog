@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-templates-tags-js","path":"/tags/travel/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/post2/banff/"},"frontmatter":{"title":"On Banff"}}}]}},"pageContext":{"tag":"travel"}}}
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/travel/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/banff/"},"frontmatter":{"title":"On Banff"}}}]}},"pageContext":{"tag":"travel"}}}
