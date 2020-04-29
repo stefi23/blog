@@ -14,7 +14,7 @@ const Banner = () => {
       }
     }
   `)
-
+  console.log("data for image", data)
   return (
     <Img
       className="rounded mb-0"

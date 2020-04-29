@@ -4,7 +4,7 @@ date: "2020-04-28"
 tags: ["travel", "Canada", "Banff"]
 ---
 
-![Image with book about Banff](./Banff.jpg)
+![Image with book about Banff](../images/Banff.jpg)
 
 Sometime ago I watched a YouTube video called “The Bucked Shot” from @petermckinnon. I made many of my friends watch this video and watched it myself a million times. It’s not only about Banff but his touch of the story got me interested in this place.
 
