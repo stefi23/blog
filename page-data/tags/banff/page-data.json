@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-templates-tags-js","path":"/tags/banff/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/banff/"},"frontmatter":{"title":"On Banff"}}}]}},"pageContext":{"tag":"Banff"}}}
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/banff/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/on-banff/"},"frontmatter":{"title":"On Banff"}}}]}},"pageContext":{"tag":"Banff"}}}
