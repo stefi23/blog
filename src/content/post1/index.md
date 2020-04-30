@@ -2,6 +2,7 @@
 title: "Welcome to my blog"
 date: "2020-04-14"
 tags: ["blog"]
+featuredImage: "../images/banner.jpg"
 ---
 
 Dear friends, family and everyone in between,

@@ -11,18 +11,10 @@ const IndexPage = ({ data, pageContext }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      {/* <img
-          src="http://lorempixel.com/700/300/city/"
-          style={{ marginBottom: "0px" }}
-        /> */}
+
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div className="post-inner-content">
           <div className="article-card row">
-            {/* <img
-              src="http://lorempixel.com/700/300/city/"
-              style={{ marginBottom: "30px" }}
-              className="rounded"
-            /> */}
             <div className="col" key={node.id}>
               <Link
                 to={node.fields.slug}

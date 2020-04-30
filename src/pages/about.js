@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const About = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="About" />
     <div className="post-inner-content">
       <div className="article-card row">
         <div className="col p-3">

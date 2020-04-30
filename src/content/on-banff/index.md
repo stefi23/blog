@@ -2,6 +2,7 @@
 title: "On Banff"
 date: "2020-04-28"
 tags: ["travel", "Canada", "Banff"]
+featuredImage: "../images/Banff.jpg"
 ---
 
 ![Image with book about Banff](../images/Banff.jpg)

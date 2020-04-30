@@ -19,10 +19,10 @@ const TagsPage = ({
   },
 }) => (
   <div>
-    <Helmet title={title} />
+    <Helmet title="Tags" />
 
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Tags" />
       <div className="post-inner-content">
         <div className="article-card row">
           <div className="col">
