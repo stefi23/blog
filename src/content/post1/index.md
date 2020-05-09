@@ -2,6 +2,7 @@
 title: "Welcome to my blog"
 date: "2020-04-14"
 tags: ["blog"]
+categories: "uncategoriesed"
 featuredImage: "../images/banner.jpg"
 ---
 

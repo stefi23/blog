@@ -38,7 +38,7 @@ function SEO({ description, lang, meta, title, image }) {
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: site.siteMetadata.description,
         },
         {
           property: `og:title`,
@@ -46,7 +46,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: site.siteMetadata.description,
         },
         {
           property: `og:type`,
@@ -74,6 +74,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
       ].concat(meta)}
     >
+      <meta name="twitter:image" content={`${site.siteMetadata.image}`}></meta>
       <link
         href="https://fonts.googleapis.com/css?family=Do+Hyeon|Gaegu:400,700|Gamja+Flower|Nanum+Gothic: 400,700|Indie+Flower|Roboto|Open+Sans:300,400,600,700&display=swap"
         rel="stylesheet"
@@ -97,7 +98,7 @@ function SEO({ description, lang, meta, title, image }) {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``,
+  description: `Personal blog about travel, life in Barcelona and much more`,
 }
 
 SEO.propTypes = {

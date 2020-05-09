@@ -23,6 +23,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const blogPostTemplate = path.resolve("src/templates/blog-post.js")
   const tagTemplate = path.resolve("src/templates/tags.js")
 
+  const categoriesTemplate = path.resolve("src/templates/categories.js")
+
   const result = await graphql(`
     {
       postsRemark: allMarkdownRemark(
@@ -37,12 +39,24 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             }
             frontmatter {
               tags
+              categories
+              title
+              date
+              featuredImage {
+                publicURL
+              }
             }
+            excerpt
           }
         }
       }
       tagsGroup: allMarkdownRemark(limit: 2000) {
         group(field: frontmatter___tags) {
+          fieldValue
+        }
+      }
+      categoriesGroup: allMarkdownRemark(limit: 2000) {
+        group(field: frontmatter___categories) {
           fieldValue
         }
       }
@@ -95,4 +109,23 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     })
   })
+
+  //Make categories pages:
+
+  const categories = result.data.categoriesGroup.group
+  categories.forEach(category => {
+    createPage({
+      path: `/category/${_.kebabCase(category.fieldValue)}/`,
+      component: categoriesTemplate,
+      context: {
+        category: category.fieldValue,
+        articles: result.data.postsRemark.edges.filter(article => {
+          return article.node.frontmatter.categories === category.fieldValue
+        }),
+      },
+    })
+  })
+
+  // console.log(result.data.categoriesGroup.group)
+  // console.log(JSON.stringify(result, undefined, 2))
 }

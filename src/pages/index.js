@@ -4,10 +4,9 @@ import SEO from "../components/seo"
 import { Link, graphql } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Navigation from "../components/navigation"
+import { Helmet } from "react-helmet"
 
 const IndexPage = ({ data, pageContext }) => {
-  console.log(pageContext)
-  console.log(data)
   return (
     <Layout>
       <SEO title="Home" />
