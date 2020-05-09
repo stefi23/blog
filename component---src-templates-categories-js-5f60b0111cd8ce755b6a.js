@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{m0YG:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),o=n.n(a);n("Bl7J"),n("vrFN"),n("Wbzz");t.default=function(e){var t=e.pageContext,n=(e.data,t.articles),a=t.category;return console.log(n),o.a.createElement("div",null," ",o.a.createElement("h1",null,"Category: ",a))}}}]);
-//# sourceMappingURL=component---src-templates-categories-js-5f60b0111cd8ce755b6a.js.map
