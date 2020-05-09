@@ -719,6 +719,17 @@ a:visited {
   display: flex;
 }
 
+.content-box-sidebar {
+  margin: 10px 0px;
+  padding: 40px 40px;
+  background-color: white;
+  border-radius: 4px;
+  /* box-shadow: 0px 10px 30px #a9a9a9; */
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  justify-content: center;
+  display: flex;
+}
+
 .image_circle {
   width: 150px;
   height: 150px;
