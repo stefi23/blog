@@ -1,6 +1,6 @@
 ---
 title: "Welcome to my blog"
-date: "2020-04-14"
+date: "2014-04-14"
 tags: ["blog"]
 categories: "uncategoriesed"
 featuredImage: "../images/banner.jpg"
@@ -14,13 +14,16 @@ Now that we are live the challenge will be to actually write :)
 
 This blog will be about:
 
-- Travel (hopefully soon we will be able to travel again as right now the furtherst I've been in a month is to Mercadona, the supermarket 650m away from my house)
-- Barcelona (the city I live in at the moment)
-- Stefi's shorts (which will be post about stuff that I am thinking about, learning or reflecting on)
-- Video (my very own YouTube videos shared here plus other videos I enjoy watching - mainly YouTube videos)
-- Recommendations (Books, Podcasts, Movies anything I find usefull and I want to recommend)
-- Quotes That Make Me Think
+- Travel (hopefully soon we will be able to travel again as right now the furtherst I've been in a month is to Mercadona, the supermarket 650m away from my house);
+- Barcelona (the city I live in at the moment);
+- Stefi's shorts (which will be post about stuff that I am thinking about, learning or reflecting on);
+- Video (my very own YouTube videos shared here plus other videos I enjoy watching - mainly YouTube videos);
+- Recommendations (Books, Podcasts, Movies anything I find usefull and I want to recommend);
+- Quotes That Make Me Think;
+- Maybe some articles code related.
 
 Hope you will enjoy it!
 
 Cheers :)
+
+> PS. Date of this post is not real. Blog was started on 2014-04-14

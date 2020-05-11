@@ -34,6 +34,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         totalCount
         edges {
           node {
+            id
             fields {
               slug
             }
@@ -41,12 +42,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               tags
               categories
               title
-              date
+              date(formatString: "DD MMMM, YYYY")
               featuredImage {
                 publicURL
               }
             }
-            excerpt
+            excerpt(pruneLength: 350)
+            timeToRead
           }
         }
       }
@@ -81,7 +83,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   })
 
-  console.log("posts per page: ", postPerPage)
+  // console.log("posts per page: ", postPerPage)
 
   Array.from({ length: numPages }).forEach((_, i) => {
     actions.createPage({

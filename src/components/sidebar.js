@@ -15,7 +15,7 @@ const Sidebar = ({ siteTitle }) => {
     `
   )
 
-  console.log(result)
+  // console.log(result)
 
   // result.categoriesGroup.group
   return (
@@ -102,7 +102,7 @@ const Sidebar = ({ siteTitle }) => {
             {result.categoriesGroup.group.map(category => (
               <Link
                 to={`category/${category.fieldValue}`}
-                className="hover-bright"
+                className="background-blue"
               >
                 <div
                   className="border p-2"
