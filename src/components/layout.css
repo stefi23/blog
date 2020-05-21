@@ -640,6 +640,18 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+  h1 {
+    font-size: 25px !important;
+  }
+  .article-card {
+    padding: 40px 20px 40px 20px !important;
+  }
+  .content-box-main {
+    padding: 40px 10px 40px 10px !important;
+  }
+  p {
+    font-size: 16px;
+  }
 }
 
 .navbar-light .nav-item.active .nav-link {
