@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-templates-tags-js","path":"/tags/coding/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/Using CSS Transitions/"},"frontmatter":{"title":"Using CSS Transitions"}}}]}},"pageContext":{"tag":"coding"}}}
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/coding/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/using-css-transitions/"},"frontmatter":{"title":"Using CSS Transitions"}}}]}},"pageContext":{"tag":"coding"}}}
