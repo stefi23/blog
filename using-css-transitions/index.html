@@ -17,27 +17,24 @@
 <p>Yesterday I've build the Expanding Cards one and refreshed my mind about <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions">CSS Transitions</a> which I believe are cool to know about and use.</p>
 <p>CSS Transitions allow you do modify a CSS property smoothly, over a given duration.</p>
 <p>To do this you have 4 propreties at hand and you can write it in 2 ways:</p>
-<code>
-.example {
-transition-property: color;
-transition-duration: 2s;
-transition-timing-function: linear;
-transition-delay: 1s;
-}
-</code>
 <pre class="line-numbers" style="max-width=300px">
   <code class="language-css">
     .example {
-transition-property: color;
-transition-duration: 2s;
-transition-timing-function: linear;
-transition-delay: 1s;
+      transition-property: color;
+      transition-duration: 2s;
+      transition-timing-function: linear;
+      transition-delay: 1s;
+    }
   </code>
 </pre>
-<p>.example {
-transition: [transition-property][transition-duration]
-[transition-timing-function][transition-delay];
-}</p>
+<pre class="line-numbers" style="max-width=300px">
+  <code class="language-css">
+    .example {
+      transition: [transition-property][transition-duration]
+      [transition-timing-function][transition-delay];
+    }
+  </code>
+</pre>
 <p><code>transition</code> Is the shorthand property for setting the four transition properties into a single property as per the example above<br>
 <code>transition-property</code> Specifies the name of the CSS property the transition effect is for.<br>
 <code>transition-duration</code> Specifies how many seconds or milliseconds a transition effect takes to complete. The slower you want something to change the higher you would set this value.<br>
