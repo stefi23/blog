@@ -15,7 +15,7 @@
 /blog/static/0feebc4873fc9cac64f7e74ae2bfa064/50587/banner.jpg 2400w,
 /blog/static/0feebc4873fc9cac64f7e74ae2bfa064/2bf6c/banner.jpg 2527w" src="/blog/static/0feebc4873fc9cac64f7e74ae2bfa064/0e329/banner.jpg" alt="Banner image with my name: Stefi Rosca" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div></div></div></header><header><div class="row"><div class="col-md-12 mt-3"><nav class="rounded navbar navbar-expand-lg navbar-light bg-light"><button aria-controls="responsive-navbar-nav" type="button" aria-label="Toggle navigation" class="navbar-toggler collapsed"><span class="navbar-toggler-icon"></span></button><div class="navbar-collapse collapse" id="responsive-navbar-nav"><div class="mr-auto navbar-nav"><a href="/blog" data-rb-event-key="/blog" class="nav-link">Home</a><a href="/blog/about" data-rb-event-key="/blog/about" class="nav-link">About</a><a href="/blog/tags" data-rb-event-key="/blog/tags" class="nav-link">Tags</a></div></div></nav></div></div></header><div class="row mt-2 "><div class="col-md-8 "><main><div class="post-inner-content"><div class="article-card row"><h1>3 Things I&#x27;ve learned by building the form-input-wave project</h1><div><p>I'm following <a style="color: #942874; text-decoration:underline" target="blank" href="https://twitter.com/florinpop1705">Florin Pop</a> and <a style="color: #942874; text-decoration:underline" target="blank" href="https://twitter.com/traversymedia">traversymedia</a> 50 Javascript, HTML, and CSS tutorials on Udemy. This is a great way to put into practice CSS properties I've learned but use rarely as well as do refresh some JavaScript DOM manipulation concepts.</p>
 <p>While going through the form-input-wave tutorial I got a better understanding on how some of the display properties work (inline, inline-block and block). I might write about this soon so do check back.</p>
-<p>Here are th 3 main takeaways:</p>
+<p>Here are the 3 main takeaways:</p>
 <ol>
 <li>How one can create a span for each character of a word by simply using the array split method from JS and adding the span around the element and then joining the word back using the join method. Here's the example of it:</li>
 </ol>
@@ -37,7 +37,9 @@
   </code>
 </pre>
 <p>To make more of sense it I added in the <code>span</code> some inline style to generate a random color. I took the random color generating code from this <a style="color: #942874; text-decoration:underline" target="blank" href="https://dev.to/akhil_001/generating-random-color-with-single-line-of-js-code-fhj">post</a>.</p>
-<p><code>&#x3C;span style="color:${"#"+Math.floor(Math.random()*16777215).toString(16)}">${letter}&#x3C;/span></code></p>
+<blockquote>
+<p>&#x3C;span style="color:${"#"+Math.floor(Math.random()*16777215).toString(16)}">${letter}&#x3C;/span></p>
+</blockquote>
 <p><b>Showcasing code with visual example:</b></p>
 <p><span
       class="gatsby-resp-image-wrapper"
