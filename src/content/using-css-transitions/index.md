@@ -1,6 +1,6 @@
 ---
 title: "Using CSS Transitions"
-date: "2020-09-12"
+date: "2020-12-09"
 tags: ["coding"]
 categories: "coding"
 featuredImage: "../images/on-trust.jpg"
@@ -14,21 +14,27 @@ CSS Transitions allow you do modify a CSS property smoothly, over a given durati
 
 To do this you have 4 propreties at hand and you can write it in 2 ways:
 
-```css
-.example {
-  transition-property: color;
-  transition-duration: 2s;
-  transition-timing-function: linear;
-  transition-delay: 1s;
-}
-```
+<pre class="line-numbers" 
+     style="width:100%; background: #352d39; color:#e3f4f5; font-family: Open Sans,sans-serif; font-size:14px">
+  <code style="max-width:100vw">
+    .example {
+      transition-property: color;
+      transition-duration: 2s;
+      transition-timing-function: linear;
+      transition-delay: 1s;
+    }
+  </code>
+</pre>
 
-```css
-.example {
-  transition: [transition-property] [transition-duration]
-    [transition-timing-function] [transition-delay];
-}
-```
+<pre class="line-numbers" 
+     style="width:100%; background: #352d39; color:#e3f4f5; font-family: Open Sans,sans-serif; font-size:14px">
+  <code style="max-width:100vw">
+    .example {
+      transition: [transition-property][transition-duration]
+      [transition-timing-function][transition-delay];
+    }
+  </code>
+</pre>
 
 `transition` Is the shorthand property for setting the four transition properties into a single property as per the example above  
 `transition-property` Specifies the name of the CSS property the transition effect is for.  
