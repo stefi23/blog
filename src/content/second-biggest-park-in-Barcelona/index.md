@@ -2,7 +2,7 @@
 title: "The second biggest park in Barcelona"
 date: "2021-03-27"
 tags: ["Barcelona", "parc", "travel"]
-categories: "barcelona"
+categories: "Barcelona"
 featuredImage: "./biblioteca-garden.jpg"
 ---
 

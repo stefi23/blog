@@ -1,8 +1,8 @@
 ---
 title: "On Trust"
 date: "2017-09-09"
-tags: ["coffee", "barcelona", "trust"]
-categories: "barcelona"
+tags: ["coffee", "Barcelona", "trust", "fun"]
+categories: "Barcelona"
 featuredImage: "../images/on-trust.jpg"
 ---
 

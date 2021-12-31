@@ -6,7 +6,7 @@ categories: "coding"
 featuredImage: "../images/christmas-robot.png"
 ---
 
-Looking back it's funny how I used to look at CSS art on codepen and think that I would never be able to do something similar. Around this  time codepen sents a newsletter including a <a style="color: #942874; text-decoration:underline" target="blank" href="https://codepen.io/collection/AeovRz ">holdiday #CodePenChallenge</a>. Those were impressive but not something I would touch until now.
+Looking back it's funny how I used to look at CSS art on codepen and think that I would never be able to do something similar. Around this time codepen sents a newsletter including a <a style="color: #942874; text-decoration:underline" target="blank" href="https://codepen.io/collection/AeovRz ">holdiday #CodePenChallenge</a>. Those were impressive but not something I would touch until now.
 
 After going through some CSS basics tutorials I wanted to better understand how `position: absolute` and `position: relative` work. What better way to do this than by making a project 😊
 
@@ -20,10 +20,10 @@ I won't consider my simple Christmas Robot art but I am pretty proud to have don
 
 The design was inspired by the <a style="color: #942874; text-decoration:underline" target="blank" href="http://robothousebcn.com/">Robot House</a> coffeeshop in Barcelona. This was my coffee go-to place in November. Here I found a wonderful woman at the counter, probably the owner, who was always available for a bit of conversation and who helped me get through the day. I'm not sure if she needed me as a client or if I needed here more to get away from my home desk and "challenging" job.
 
-If curious you can find the code on <a style="color: #942874; text-decoration:underline" target="blank" href="https://codepen.io/stefi23/pen/YzGZEYg">CodePen</a> as well as on my <a style="color: #942874; text-decoration:underline" target="blank" href="https://github.com/stefi23/christmas-robot">GitHub</a>. 
+If curious you can find the code on <a style="color: #942874; text-decoration:underline" target="blank" href="https://codepen.io/stefi23/pen/YzGZEYg">CodePen</a> as well as on my <a style="color: #942874; text-decoration:underline" target="blank" href="https://github.com/stefi23/christmas-robot">GitHub</a>.
 
-Hope this will be the beginning of more such projects.  
+Hope this will be the beginning of more such projects.
 
-For those who are looking at images created with CSS like I used to I say that it might look hard and intimidating but if you start small you can draw some nice things too.  
+For those who are looking at images created with CSS like I used to I say that it might look hard and intimidating but if you start small you can draw some nice things too.
 
-🤶🤖 Feliz Navidad! 
+🤶🤖 Feliz Navidad!
