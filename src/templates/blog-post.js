@@ -10,7 +10,7 @@ export default ({ data }) => {
     return <h2>Sorry, couldn't find that!</h2>
   }
   const post = data.markdownRemark
-
+  
   return (
     <Layout>
       <Helmet>
@@ -57,11 +57,11 @@ export default ({ data }) => {
         description={post.excerpt}
         featuredImage={post.frontmatter.featuredImage}
       /> */}
-      <div className="post-inner-content">
+      <div className="post-innerContent">
         <div className="article-card row">
-          <h1>{post.frontmatter.title}</h1>
+          <h1 className="post-innerContent-title">{post.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          <div className="text-center">
+          <div>
             <Link to="/" className="btn-bordo rounded">
               Go Back
             </Link>
@@ -91,6 +91,7 @@ export const query = graphql`
       }
       frontmatter {
         title
+        tags
         date(formatString: "MMMM DD, YYYY")
         featuredImage {
           childImageSharp {

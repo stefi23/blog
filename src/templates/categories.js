@@ -4,14 +4,11 @@ import PropTypes from "prop-types"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-// Components
 import { Link, graphql } from "gatsby"
 
 const Categories = ({ pageContext, data }) => {
   const { articles, category } = pageContext
 
-  // console.log("artices", articles)
-  // articles.map(article => console.log(article.node))
 
   return (
     <Layout>
@@ -19,7 +16,7 @@ const Categories = ({ pageContext, data }) => {
 
       <div>
         {" "}
-        <div className="row post-inner-content" style={{ borderRadius: "4px" }}>
+        <div className="row categories-innerContent" style={{ borderRadius: "4px" }}>
           {" "}
           <div className="col-md-12 navigation-card">
             <div className="row">
@@ -51,12 +48,11 @@ const Categories = ({ pageContext, data }) => {
           </div>
         </div>
         {articles.map(article => (
-          // <h2>{article.node.frontmatter.title}</h2>
-          <div className="post-inner-content">
+          <div className='post-innerContent'>
             <div className="article-card row">
               <div className="col" key={article.node.id}>
                 <Link to={article.node.fields.slug} className="hover-bright">
-                  <h1>{article.node.frontmatter.title} </h1>
+                  <h1 className='post-innerContent-title'>{article.node.frontmatter.title} </h1>
                 </Link>
                 <span
                   style={{

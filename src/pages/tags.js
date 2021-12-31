@@ -17,17 +17,17 @@ const TagsPage = ({
       siteMetadata: { title, description, image },
     },
   },
-}) => (
+}) => {
+
+return  (
   <div>
     <Helmet title="Tags" />
     <Layout>
       <SEO title="Tags" />
-      <div className="post-inner-content">
+      <div className="tags-innerContent">
         <div className="article-card row">
           <div className="col">
-            <h1>Tags</h1>
-
-            {/* <p>Welcome to the tags page</p> */}
+            <h1 className='tags-innerContent-title'>Tags</h1>
             <ul>
               {group.map(tag => (
                 <li key={tag.fieldValue}>
@@ -46,8 +46,7 @@ const TagsPage = ({
             </ul>
             <Link to="/">
               <a className="btn-bordo rounded" href="">
-                {" "}
-                Go Back{" "}
+                Go Back
               </a>
             </Link>
           </div>
@@ -56,6 +55,7 @@ const TagsPage = ({
     </Layout>
   </div>
 )
+}
 
 TagsPage.propTypes = {
   data: PropTypes.shape({

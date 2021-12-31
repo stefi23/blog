@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Do+Hyeon|Gaegu:400,700|Gamja+Flower|Nanum+Gothic: 400,700|Indie+Flower|Roboto|Open+Sans:300,400,600,700&display=swap");
+
+:root {
+  --primary-color: #581845;
+  --primary-bg-color: #352d39;
+  --secondary-bg-color: #fcfcfc;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -56,13 +64,24 @@ strong {
 dfn {
   font-style: italic;
 }
-h1 {
+
+.post-innerContent-title,
+.tags-innerContent-title {
   margin: 0.67em 0;
-  color: #581845 !important;
+  color: var(--primary-color);
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 30px !important;
 }
+
+.about-innerContent-title {
+  color: var(--primary-color);
+  font-family: "Indie Flower", cursive;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 35px;
+}
+
 mark {
   background-color: #ff0;
   color: #000;
@@ -752,7 +771,11 @@ a:focus {
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 
-.post-inner-content {
+.post-innerContent,
+.nav-innerContent,
+.about-innerContent,
+.tags-innerContent,
+.categories-innerContent {
   padding-left: 15px;
   padding-right: 15px;
 }

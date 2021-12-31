@@ -11,17 +11,18 @@ const IndexPage = ({ data, pageContext }) => {
     <Layout>
       <SEO title="Home" />
 
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div className="post-inner-content">
+      {data.allMarkdownRemark.edges.map(({ node }) => {
+      return (
+       
+        <div className='post-innerContent'>
           <div className="article-card row">
             <div className="col" key={node.id}>
               <Link
                 to={node.fields.slug}
                 className="hover-bright"
-                // style={{ textDecoration: "none" }}
               >
-                {" "}
-                <h1>{node.frontmatter.title}</h1>
+                {/* <img src={node.frontmatter.featuredImage.publicURL} alt='image'/> */}
+                <h1 className='post-innerContent-title'>{node.frontmatter.title}</h1>
               </Link>
               <span
                 style={{
@@ -45,7 +46,7 @@ const IndexPage = ({ data, pageContext }) => {
             </div>
           </div>
         </div>
-      ))}
+      )})}
       <Navigation
         currentPage={pageContext.BlogCurrentPage}
         totalPages={pageContext.BlogNumPages}
@@ -70,6 +71,9 @@ export const query = graphql`
             title
             date(formatString: "DD MMMM, YYYY")
             tags
+            featuredImage {
+            publicURL
+          }
           }
           fields {
             slug

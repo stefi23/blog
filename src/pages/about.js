@@ -7,19 +7,10 @@ import SEO from "../components/seo"
 const About = () => (
   <Layout>
     <SEO title="About" />
-    <div className="post-inner-content">
+    <div className="about-innerContent">
       <div className="article-card row">
         <div className="col p-3">
-          <h1
-            style={{
-              color: "#581845",
-
-              fontFamily: "Indie Flower, cursive",
-              fontWeight: "700",
-              fontSize: "40px",
-              lineHeight: "35px",
-            }}
-          >
+          <h1 className='about-innerContent-title'>
             Hello, I'm Stefi!
           </h1>
           <p>
@@ -31,8 +22,7 @@ const About = () => (
 
           <Link to="/">
             <a className="btn-bordo rounded" href="">
-              {" "}
-              Go Back{" "}
+              Go Back
             </a>
           </Link>
         </div>

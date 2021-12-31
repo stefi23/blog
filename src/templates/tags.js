@@ -4,7 +4,6 @@ import PropTypes from "prop-types"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-// Components
 import { Link, graphql } from "gatsby"
 
 const Tags = ({ pageContext, data }) => {
@@ -19,10 +18,10 @@ const Tags = ({ pageContext, data }) => {
       <Layout>
         <SEO title={tagHeader} />
 
-        <div className="post-inner-content">
+        <div className="tags-innerContent">
           <div className="article-card row">
             <div className="col">
-              <h1 className="mb-3">{tagHeader}</h1>
+              <h1 className="mb-3 tags-innerContent-title">{tagHeader}</h1>
               <div className="p-3">
                 <ul>
                   {edges.map(({ node }) => {

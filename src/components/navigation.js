@@ -22,7 +22,7 @@ export default ({ prefix = "/page/", currentPage, totalPages }) => {
   return (
     //To change what it looks like
     <div
-      className="row mt-2 post-inner-content"
+      className="row mt-2 nav-innerContent"
       style={{ borderRadius: "4px" }}
     >
       <div className="col-md-12 navigation-card">
