@@ -101,7 +101,7 @@ const Sidebar = ({ siteTitle }) => {
             {" "}
             {result.categoriesGroup.group.map(category => (
               <Link
-                to={`category/${category.fieldValue}`}
+                to={`category/${(category.fieldValue).toLowerCase()}`}
                 className="background-blue"
               >
                 <div
