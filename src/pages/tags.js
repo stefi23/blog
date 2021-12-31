@@ -1,14 +1,12 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
+import { Link, graphql } from "gatsby"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-// Utilities
 import kebabCase from "lodash/kebabCase"
-
-// Components
-import { Helmet } from "react-helmet"
-import { Link, graphql } from "gatsby"
 
 const TagsPage = ({
   data: {
@@ -29,25 +27,23 @@ return  (
           <div className="col">
             <h1 className='tags-innerContent-title'>Tags</h1>
             <ul>
-              {group.map(tag => (
-                <li key={tag.fieldValue}>
+              {group.map(tag =>  {
+              const {fieldValue, totalCount } = tag
+              return (
+                <li className="tags-innerContent-item" key={fieldValue}>
                   <Link
-                    to={`/tags/${kebabCase(tag.fieldValue)}/`}
-                    style={{
-                      fontFamily: "Open Sans, sans-serif",
-                      color: "#581845",
-                      fontSize: "14px",
-                    }}
+                    to={`/tags/${kebabCase(fieldValue)}/`}
+                    className="tags-innerContent-item-link"
                   >
-                    {tag.fieldValue} ({tag.totalCount})
+                    {fieldValue} ({totalCount})
                   </Link>
                 </li>
-              ))}
+              )})}
             </ul>
             <Link to="/">
-              <a className="btn-bordo rounded" href="">
-                Go Back
-              </a>
+              <button className="primaryButton" href="">
+                Go Back to Home page
+              </button>
             </Link>
           </div>
         </div>
