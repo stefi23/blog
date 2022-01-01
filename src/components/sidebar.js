@@ -98,23 +98,14 @@ const Sidebar = ({ siteTitle }) => {
         <div className="content-box-sidebar flex-column d-flex">
           <h2 className="text-center">categories:</h2>
           <div>
-            {" "}
             {result.categoriesGroup.group.map(category => (
               <Link
                 to={`category/${(category.fieldValue).toLowerCase()}`}
-                className="background-blue"
+                className="sidebarCategory-link"
               >
-                <div
-                  className="border p-2"
-                  style={{
-                    textAlign: "center",
-                    margin: "10px 0px",
-                    boxShadow: "0 4px 6px 0 hsla(0, 0%, 0%, 0.1)",
-                    borderRadius: "4px",
-                  }}
-                >
-                  {category.fieldValue}{" "}
-                </div>
+                <p className="border p-2 sidebarCategory-link">
+                  {category.fieldValue}
+                </p>
               </Link>
             ))}
           </div>
