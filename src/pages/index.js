@@ -12,35 +12,31 @@ const IndexPage = ({ data, pageContext }) => {
       <SEO title="Home" />
 
       {data.allMarkdownRemark.edges.map(({ node }) => {
+
       return (
        
         <div className='post-innerContent'>
           <div className="article-card row">
             <div className="col" key={node.id}>
-              <Link
-                to={node.fields.slug}
-                className="hover-bright"
-              >
+              <Link to={node.fields.slug}>
                 {/* <img src={node.frontmatter.featuredImage.publicURL} alt='image'/> */}
                 <h1 className='post-innerContent-title'>{node.frontmatter.title}</h1>
               </Link>
-              <span
-                style={{
-                  fontFamily: "Open Sans, sans-serif",
-                  color: "#8f3774",
-                  fontSize: "12px",
-                }}
-              >
-                {node.frontmatter.date}
-              </span>
+                <span className="post-innerContent-info">
+                 {`${node.frontmatter.date} • ${node.timeToRead} min read`} • <Link className="post-innerContent-info-link" to={`category/${(node.frontmatter.categories).toLowerCase()}`}>category: {node.frontmatter.categories}</Link>  
+                </span>
+                <p>
+                {node.frontmatter.tags.map(tag => 
+                  <Link to={`/tags/${(tag).toLowerCase()}/`} className='post-innerContent-info-highlight' key={tag}>{tag}</Link>
+                )
+                }
+                </p>
               <p>{node.excerpt}</p>
-              <p>
-                Reading time: {node.timeToRead}{" "}
-                {node.timeToRead == 1 ? "minute" : "minutes"}
-              </p>
               <div className="col">
-                <Link to={node.fields.slug} className="btn-bordo rounded">
-                  Read More
+                 <Link to={node.fields.slug}>
+                    <button className="primaryButton primaryButton-right">
+                      Continue Reading
+                    </button>
                 </Link>
               </div>
             </div>
@@ -69,8 +65,9 @@ export const query = graphql`
           id
           frontmatter {
             title
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "MMMM DD, YYYY")
             tags
+            categories
             featuredImage {
             publicURL
           }
