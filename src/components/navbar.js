@@ -1,8 +1,6 @@
 import React from "react"
-import "./layout.css"
 import { Link } from "gatsby"
-import "bootstrap/dist/css/bootstrap.min.css"
-import { Nav, Navbar, NavDropdown } from "react-bootstrap"
+import { Nav, Navbar } from "react-bootstrap"
 
 const MyNavbar = () => (
   <header>
@@ -12,36 +10,14 @@ const MyNavbar = () => (
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="/blog">Home</Nav.Link>
-              <Nav.Link href="/blog/about">About</Nav.Link>
-              <Nav.Link href="/blog/tags">Tags</Nav.Link>
+              <Link to="/" className='navLink'>Home</Link>
+              <Link to="/about" className='navLink'>About</Link>
+              <Link to="/tags" className='navLink'>Tags</Link>
             </Nav>
-            {/* <Nav>
-              <Nav.Link href="https://stefi.codes/">Portfolio</Nav.Link>
-            </Nav> */}
           </Navbar.Collapse>
         </Navbar>
       </div>
     </div>
-    {/* <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div> */}
   </header>
 )
 
