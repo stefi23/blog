@@ -13,33 +13,13 @@ const Categories = ({ pageContext, data }) => {
   return (
     <Layout>
       <SEO title={category} />
-
-      <div>
-        {" "}
-        <div className="row categories-innerContent" style={{ borderRadius: "4px" }}>
-          {" "}
+        <div className="row categories-innerContent">
           <div className="col-md-12 navigation-card">
             <div className="row">
-              <div
-                className=" mb-0 fontSize15"
-                style={{
-                  color: "#581845",
-                }}
-              >
-                <p
-                  className="mb-0 fontSize15"
-                  style={{
-                    color: "#581845",
-                    padding: "15px",
-                  }}
-                >
-                  Articles from category{" "}
-                  <span
-                    style={{
-                      fontWeight: "bold",
-                    }}
-                  >
-                    {" "}
+              <div className="mb-0">
+                <p className="mb-0 categories-innerContent-info">
+                  {`Articles from category `} 
+                  <span className='categories-innerContent-info-highlight'>
                     {category}:
                   </span>
                 </p>
@@ -48,30 +28,24 @@ const Categories = ({ pageContext, data }) => {
           </div>
         </div>
         {articles.map(article => (
-          <div className='post-innerContent'>
+          <div className="post-innerContent">
             <div className="article-card row">
               <div className="col" key={article.node.id}>
-                <Link to={article.node.fields.slug} className="hover-bright">
-                  <h1 className='post-innerContent-title'>{article.node.frontmatter.title} </h1>
+                <Link to={article.node.fields.slug}>
+                  <h1 className="post-innerContent-title">{article.node.frontmatter.title}</h1>
                 </Link>
-                <span
-                  style={{
-                    fontFamily: "Open Sans, sans-serif",
-                    color: "#8f3774",
-                    fontSize: "12px",
-                  }}
-                >
+                <span className="post-innerContent-date">
                   {article.node.frontmatter.date}
                 </span>
-                <p> {article.node.excerpt}</p>
-                <p>
-                  Reading time: {article.node.timeToRead}{" "}
-                  {article.node.timeToRead == 1 ? "minute" : "minutes"}
+                <p className="post-innerContent-content">{article.node.excerpt}</p>
+                <p className="post-innerContent-readMore">
+                  {`Reading time: ${article.node.timeToRead}
+                  ${article.node.timeToRead == 1 ? "minute" : "minutes"}`}
                 </p>
                 <div className="col">
                   <Link
                     to={article.node.fields.slug}
-                    className="btn-bordo rounded"
+                    className="primaryButton primaryButton-right"
                   >
                     Read More
                   </Link>
@@ -80,7 +54,7 @@ const Categories = ({ pageContext, data }) => {
             </div>
           </div>
         ))}
-      </div>
+
     </Layout>
   )
 }
