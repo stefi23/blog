@@ -79,7 +79,7 @@ export default ({ data }) => {
       /> */}
       <div className="post-innerContent">
         <div className="article-card row">
-           <div ccaclassName="col">
+           <div className="col">
           <h1 className="post-innerContent-title">{title}</h1>
            <span className="post-innerContent-info">
                  {`${date} •
