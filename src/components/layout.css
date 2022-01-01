@@ -70,7 +70,7 @@ dfn {
   color: var(--primary-color);
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  font-size: 30px !important;
+  font-size: 30px;
 }
 
 .about-innerContent-title {
@@ -86,10 +86,21 @@ dfn {
   text-decoration: underline;
 }
 
-.post-innerContent-date {
+.post-innerContent-date,
+.post-innerContent-info {
   font-family: "Open Sans", sans-serif;
   color: #8f3774;
   font-size: 12px;
+}
+
+.post-innerContent-info-link {
+  color: var(--primary-color);
+  text-decoration: underline !important;
+  text-decoration-color: red;
+}
+
+.post-innerContent-info-link:hover {
+  color: var(--secondary-color);
 }
 
 .post-innerContent-content,
@@ -111,6 +122,21 @@ dfn {
   font-weight: bold;
   background: #e3f4f5;
   padding: 2px 8px;
+}
+
+.post-innerContent-info-highlight,
+.post-innerContent-info-highlight:link,
+.post-innerContent-info-highlight:visited {
+  color: var(--secondary-color);
+  margin-right: 5px;
+  background: #e3f4f5;
+  padding: 2px 8px;
+}
+
+.post-innerContent-info-highlight:hover {
+  color: #e3f4f5;
+  background-color: var(--secondary-color);
+  text-decoration: none;
 }
 
 mark {
@@ -398,6 +424,9 @@ dd {
   margin-bottom: 1.45rem;
 }
 p {
+  color: var(--primary-color);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -406,10 +435,8 @@ p {
   padding-left: 0;
   padding-right: 0;
   padding-top: 1rem;
-  font-family: "Open Sans", sans-serif;
-  color: #581845;
-  font-size: 14px;
 }
+
 figure {
   margin-left: 0;
   margin-right: 0;
@@ -623,6 +650,17 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+
+  .post-innerContent-content,
+  .post-innerContent-readMore {
+    font-size: 16px;
+  }
+
+  .post-innerContent-title,
+  .tags-innerContent-title {
+    font-size: 25px;
+  }
+
   h1 {
     font-size: 25px !important;
   }

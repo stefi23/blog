@@ -9,7 +9,6 @@ import { Link, graphql } from "gatsby"
 const Categories = ({ pageContext, data }) => {
   const { articles, category } = pageContext
 
-
   return (
     <Layout>
       <SEO title={category} />
@@ -27,33 +26,43 @@ const Categories = ({ pageContext, data }) => {
             </div>
           </div>
         </div>
-        {articles.map(article => (
+        {articles.map(article => {
+
+          const { node } = article
+          const { id, fields, frontmatter, excerpt, timeToRead } = node
+          const { slug } = fields
+          const { title, date, tags } = frontmatter
+
+          return (
+            
           <div className="post-innerContent">
             <div className="article-card row">
-              <div className="col" key={article.node.id}>
-                <Link to={article.node.fields.slug}>
-                  <h1 className="post-innerContent-title">{article.node.frontmatter.title}</h1>
+              <div className="col" key={id}>
+                <Link to={slug}>
+                  <h1 className="post-innerContent-title">{title}</h1>
                 </Link>
-                <span className="post-innerContent-date">
-                  {article.node.frontmatter.date}
+                 <span className="post-innerContent-info">
+                 {`${date} •
+                  ${timeToRead} min read`} • <Link className="post-innerContent-info-link" to={`category/${(category).toLowerCase()}`}>category: {category}</Link> 
                 </span>
-                <p className="post-innerContent-content">{article.node.excerpt}</p>
-                <p className="post-innerContent-readMore">
-                  {`Reading time: ${article.node.timeToRead}
-                  ${article.node.timeToRead == 1 ? "minute" : "minutes"}`}
+                <p>
+                    {tags.map(tag => 
+                      <Link to={`/tags/${(tag).toLowerCase()}/`} className='post-innerContent-info-highlight' key={tag}>{tag}</Link>
+                      )
+                    }
                 </p>
+                <p className="post-innerContent-content">{excerpt}</p>
                 <div className="col">
-                  <Link
-                    to={article.node.fields.slug}
-                    className="primaryButton primaryButton-right"
-                  >
-                    Read More
-                  </Link>
+                   <Link to={slug}>
+                    <button className="primaryButton primaryButton-right">
+                      Continue Reading
+                    </button>
+                </Link>
                 </div>
               </div>
             </div>
           </div>
-        ))}
+        )})}
 
     </Layout>
   )
