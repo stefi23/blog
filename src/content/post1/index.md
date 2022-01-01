@@ -2,7 +2,7 @@
 title: "Welcome to my blog"
 date: "2014-04-14"
 tags: ["blog"]
-categories: "uncategoriesed"
+categories: "uncategorised"
 featuredImage: "../images/banner.jpg"
 ---
 
