@@ -42,4 +42,4 @@ To do this you have 4 propreties at hand and you can write it in 2 ways:
 `transition-timing-function` Specifies the speed curve of the transition effect. There are various options. My advice for this is to try them out and see how things change. You can find the options with some visual examples [here](https://cssreference.io/property/transition-timing-function/).  
 `transition-delay` Specifies a delay (in seconds) for the transition effect.
 
-In the project I did the effect was used to ease in with for 0.3 seconds with a delay 0.4 second delay the opacity of the text. See it in action [here](https://stefi.codes/50-JS-Projects/Expanding-Cards/index.html)
+In the project I did the effect was used to ease in with for 0.3 seconds with a delay 0.4 second delay the opacity of the text. See it in action [here](https://stefi.xyz/50-JS-Projects/Expanding-Cards/index.html)

@@ -87,4 +87,4 @@ In order to do this one would use the transform property `translateY` and give i
 
 That's all for now! Thanks for reading 🙈
 
-<a style="color: #942874; text-decoration:underline" target="blank" href="https://stefi.codes/50-JS-Projects/form-input-wave/index.html ">Project preview</a>
+<a style="color: #942874; text-decoration:underline" target="blank" href="https://stefi.xyz/50-JS-Projects/form-input-wave/index.html ">Project preview</a>
