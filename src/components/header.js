@@ -1,18 +1,16 @@
 import React from "react"
+import { Link } from "gatsby"
+
 import Banner from "../components/banner"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header>
     <div className="row" style={{ marginTop: "20px" }}>
       <div className="col-md-12">
         <div className="header">
+        <Link to="">
           <Banner />
-
-          {/* <img
-            src="https://github.com/stefi23/MyPortfolio/blob/master/YouTube%20Cover%20Stefi.jpg?raw=true"
-            alt="Banner image with my name: Stefi Rosca"
-            className="rounded mb-0"
-          /> */}
+          </Link>
         </div>
       </div>
     </div>
