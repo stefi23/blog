@@ -2,7 +2,7 @@ import React from "react"
 import ProfilePicture from "../components/profile-picture"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
-const Sidebar = ({ siteTitle }) => {
+const Sidebar = () => {
   const result = useStaticQuery(
     graphql`
       query {
@@ -15,21 +15,17 @@ const Sidebar = ({ siteTitle }) => {
     `
   )
 
-  // console.log(result)
-
-  // result.categoriesGroup.group
   return (
     <header>
       <div className="d-flex flex-column">
         <div className="content-box-main flex-column d-flex">
           <ProfilePicture />
-
           <br />
-          <h2 className="mb-1" id="center">
+          <h2 className="mb-1 sidebar-innerContent-title" id="center">
             Get in touch!
           </h2>
-          <ul className="list-inline-center mb-0 pb-0">
-            <li>
+          <ul className="sidebar-innerContent-list mb-0 pb-0">
+            <li className="sidebar-innerContent-item">
               <a
                 href="https://www.linkedin.com/in/stefaniarosca/"
                 aria-label="Here is a link towards my LinkedIn profile"
@@ -37,52 +33,52 @@ const Sidebar = ({ siteTitle }) => {
                 target="_blank"
               >
                 <i
-                  className="fab fa-linkedin"
+                  className="fab fa-linkedin sidebar-innerContent-icon"
                   aria-label="Here is a link towards my LinkedIn profile"
                 ></i>
               </a>
             </li>
-            <li>
+            <li className="sidebar-innerContent-item">
               <a
                 href="https://github.com/stefi23"
                 aria-label="Here is a link towards my Github profile"
                 alt="Github profile"
                 target="_blank"
               >
-                <i className="fab fa-github"></i>
+                <i className="fab fa-github sidebar-innerContent-icon"></i>
               </a>
             </li>
           </ul>
-          <ul className="list-inline-center mb-0">
-            <li>
+          <ul className="sidebar-innerContent-list mb-0">
+            <li className="sidebar-innerContent-item">
               <a
                 href="https://www.instagram.com/stefi_rosca/"
                 alt="Instagram profile"
                 aria-label="Here is a link towards my Instagram profile"
                 target="_blank"
               >
-                <i className="fab fa-instagram fa-size:5x"></i>
+                <i className="fab fa-instagram sidebar-innerContent-icon"></i>
               </a>
             </li>
-            <li>
+            <li className="sidebar-innerContent-item">
               <a
                 href="https://www.youtube.com/c/StefiRosca"
                 alt="YouTube channel"
                 aria-label="Here is a link towards my YouTube profile"
                 target="_blank"
               >
-                <i className="fab fa-youtube"></i>
+                <i className="fab fa-youtube sidebar-innerContent-icon"></i>
               </a>
             </li>
 
-            <li>
+            <li className="sidebar-innerContent-item">
               <a
                 href="https://twitter.com/Stefania_Rosca"
                 alt="Twitter profile"
                 aria-label="Here is a link towards my Twitter profile"
                 target="_blank"
               >
-                <i className="fab fa-twitter"></i>
+                <i className="fab fa-twitter sidebar-innerContent-icon"></i>
               </a>
             </li>
           </ul>
@@ -96,7 +92,7 @@ const Sidebar = ({ siteTitle }) => {
         </div>
         {/* <div className="content-box-main flex-column d-flex">About Blog</div> */}
         <div className="content-box-sidebar flex-column d-flex">
-          <h2 className="text-center">categories:</h2>
+          <h2 className="text-center sidebar-innerContent-title">categories:</h2>
           <div>
             {result.categoriesGroup.group.map(category => (
               <Link
