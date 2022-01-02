@@ -8,7 +8,7 @@ const Header = () => (
     <div className="row" style={{ marginTop: "20px" }}>
       <div className="col-md-12">
         <div className="header">
-        <Link to="">
+        <Link to="/">
           <Banner />
           </Link>
         </div>
