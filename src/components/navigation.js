@@ -5,7 +5,7 @@ const NavBtn = ({ label, to = "#", isDisabled = false, direction }) => {
   if (isDisabled) {
     return <p></p>
     }
-    
+
   return (
     <Link to={to} className={`p-1 navigationButton navigationButton-${direction}`}>
       {label}
