@@ -95,7 +95,7 @@ const Sidebar = () => {
           <h2 className="text-center sidebar-innerContent-title">categories:</h2>
           <div>
             {result.categoriesGroup.group.map(category => (
-              <Link
+              <Link key={category.fieldValue}
                 to={`category/${(category.fieldValue).toLowerCase()}`}
                 className="sidebarCategory-link"
               >
