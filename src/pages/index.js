@@ -7,6 +7,7 @@ import Navigation from "../components/navigation"
 import { Helmet } from "react-helmet"
 
 const IndexPage = ({ data, pageContext }) => {
+
   return (
     <Layout>
       <SEO title="Home" />
@@ -14,12 +15,10 @@ const IndexPage = ({ data, pageContext }) => {
       {data.allMarkdownRemark.edges.map(({ node }) => {
 
       return (
-       
         <div className='post-innerContent'>
           <div className="article-card row">
             <div className="col" key={node.id}>
               <Link to={node.fields.slug}>
-                {/* <img src={node.frontmatter.featuredImage.publicURL} alt='image'/> */}
                 <h1 className='post-innerContent-title'>{node.frontmatter.title}</h1>
               </Link>
                 <span className="post-innerContent-info">
