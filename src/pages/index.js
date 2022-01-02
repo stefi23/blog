@@ -18,8 +18,8 @@ const IndexPage = ({ data, pageContext }) => {
         <div className='post-innerContent'>
           <div className="article-card row">
             <div className="col" key={node.id}>
-              <Link to={node.fields.slug}>
-                <h1 className='post-innerContent-title'>{node.frontmatter.title}</h1>
+              <Link  to={node.fields.slug}>
+                <h1 className="post-innerContent-title-main">{node.frontmatter.title}</h1>
               </Link>
                 <span className="post-innerContent-info">
                  {`${node.frontmatter.date} • ${node.timeToRead} min read`} • <Link className="post-innerContent-info-link" to={`category/${(node.frontmatter.categories).toLowerCase()}`}>category: {node.frontmatter.categories}</Link>  
