@@ -21,8 +21,6 @@ export default ({ data }) => {
 
   const {markdownRemark} = data
 
-  console.log('debug', data)
-
   const { timeToRead, frontmatter ,html, excerpt, fields} = markdownRemark
 
   const { slug } = fields
