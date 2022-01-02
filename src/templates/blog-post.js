@@ -95,8 +95,10 @@ export default ({ data }) => {
             <div dangerouslySetInnerHTML={{ __html: postContent }} />
             
             <div>
-              <Link to="/" className="primaryButton">
-                Go Back
+              <Link to="/" >
+                <button className="primaryButton">
+                Go Back to Home page
+                </button>
               </Link>
             </div>
     
