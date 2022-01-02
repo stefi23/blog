@@ -74,12 +74,14 @@ dfn {
   font-size: 30px;
 }
 
-.about-innerContent-title {
+.about-innerContent-title,
+.sidebar-innerContent-title {
   color: var(--primary-color);
   font-family: "Indie Flower", cursive;
+  font-size: 30px !important;
   font-weight: 700;
-  font-size: 40px;
   line-height: 35px;
+  margin: 0.67em 0;
 }
 
 .post-innerContent-title:hover {
@@ -97,7 +99,6 @@ dfn {
 .post-innerContent-info-link {
   color: var(--primary-color);
   text-decoration: underline !important;
-  text-decoration-color: red;
 }
 
 .post-innerContent-info-link:hover {
@@ -308,10 +309,10 @@ h1 {
   line-height: 1.1;
 }
 h2 {
-  color: #581845 !important;
-  font-family: "Indie Flower", cursive !important;
+  color: var(--primary-color) !important;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700 !important;
-  font-size: 30px !important;
+  font-size: 25px !important;
   line-height: 35px !important;
 }
 h3 {
@@ -324,8 +325,7 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
@@ -341,8 +341,7 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
@@ -358,8 +357,7 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
@@ -375,8 +373,7 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
@@ -399,11 +396,23 @@ hgroup {
   font-size: 14px;
 }
 
-ol {
+ol,
+ul {
+  color: var(--primary-color);
   font-family: "Open Sans", sans-serif;
-  color: #581845;
-  font-size: 16px;
+  font-size: 14px;
+  list-style-image: none;
+  list-style-position: outside;
+  margin-bottom: 1.45rem;
+  margin-left: 1.45rem;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
 }
+
 dl {
   margin-left: 0;
   margin-right: 0;
@@ -561,11 +570,11 @@ th {
   font-weight: bold;
 }
 
-/* li > ul {
+li > ul {
   margin-left: 1.45rem;
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
-} */
+}
 blockquote *:last-child {
   margin-bottom: 0;
 }
@@ -665,6 +674,11 @@ pre tt:after {
   h1 {
     font-size: 25px !important;
   }
+
+  h2 {
+    font-size: 20px !important;
+  }
+
   .article-card {
     padding: 40px 20px 40px 20px !important;
   }
@@ -741,10 +755,6 @@ a:link {
   text-decoration: none;
 }
 
-/* a:visited {
-  color: #581845;
-} */
-
 .tags-innerContent-item-link:link {
   color: var(--primary-color);
 }
@@ -768,21 +778,18 @@ a:focus {
   width: 100%;
   margin-left: auto;
   padding: 0px;
-  font-family: "Open Sans", sans-serif !important;
   margin-top: 10px;
 }
 
-.footer-color {
-  background: #dfe0e1;
-  padding: 10px;
+.footer-innerContent {
+  background: var(--secondary-bg-color);
   border-radius: 4px;
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-  margin-bottom: 20px;
-}
-
-.fontcolor {
+  color: var(--primary-color);
   font-family: "Open Sans", sans-serif;
-  color: #581845;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
 }
 
 .content-box-main {
@@ -816,23 +823,25 @@ a:focus {
   margin-right: auto;
 }
 
-.list-inline-center i:hover {
+.sidebar-innerContent-item :hover {
   color: #8f3774;
+  transition: all 0.5s ease;
 }
 
-.list-inline-center {
-  list-style: none;
-  padding: 0px;
+.sidebar-innerContent-list {
   justify-content: center;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
   padding: 10px;
   text-align: center;
 }
 
-.list-inline-center li {
+.sidebar-innerContent-item {
   display: inline;
 }
 
-.list-inline-center i {
+.sidebar-innerContent-icon {
   color: #6c1d55;
   font-size: 30px !important;
   padding: 0px 5px;
@@ -873,6 +882,7 @@ a:focus {
   color: white;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
+  margin-top: 18px;
   padding: 10px 12px;
   transition: all 0.5s ease;
 }
@@ -887,30 +897,32 @@ a:focus {
   float: right;
 }
 
-.btn-bordo {
-  background: #581845 !important;
-  color: white !important;
-  font-family: "Open Sans", sans-serif !important;
-  padding: 10px 12px !important;
-  font-size: 14px !important;
-  float: right;
-}
-
-.btn-bordo:hover {
-  background: #77205d !important;
-  color: #ffffff !important;
-  text-decoration: none;
-}
-
 .post-innerContent-title:hover {
   color: var(--secondary-color);
   text-decoration: underline;
 }
 
-/* .hover-bright a:hover {
-  color: #77205d !important;
-  text-decoration: underline;
-} */
+.navigationButton,
+.navigationButton:link,
+.navigationButton:visited {
+  color: var(--primary-color);
+}
+
+.navigationButton:hover {
+  color: var(--secondary-color) !important;
+  text-decoration: none;
+  transition: transform 0.5s linear;
+}
+
+.navigationButton-right:hover {
+  transform: translateX(10px);
+  transition: transform 0.5s linear;
+}
+
+.navigationButton-left:hover {
+  transform: translateX(-10px);
+  transition: transform 0.5s linear;
+}
 
 .sidebarCategory-link {
   color: var(--primary-color);

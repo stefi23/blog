@@ -77,29 +77,32 @@ export default ({ data }) => {
         description={post.excerpt}
         featuredImage={post.frontmatter.featuredImage}
       /> */}
-      <div className="post-innerContent">
-        <div className="article-card row">
+ 
+        <div className="article-card">
            <div className="col">
-          <h1 className="post-innerContent-title">{title}</h1>
-           <span className="post-innerContent-info">
+
+              <h1 className="post-innerContent-title">{title}</h1>
+              <span className="post-innerContent-info">
                  {`${date} •
                   ${timeToRead} min read`} • <Link className="post-innerContent-info-link" to={`category/${(category).toLowerCase()}`}>category: {category}</Link> 
-          </span>
-          <p>
-          {tags.map(tag => 
-             <Link to={`/tags/${(tag).toLowerCase()}/`} className='post-innerContent-info-highlight' key={tag}>{tag}</Link>
-          )
-          }
-          </p>
-          <div dangerouslySetInnerHTML={{ __html: postContent }} />
-          <div>
-            <Link to="/" className="primaryButton">
-              Go Back
-            </Link>
+              </span>
+              <p>
+              {tags.map(tag => 
+              <Link to={`/tags/${(tag).toLowerCase()}/`} className='post-innerContent-info-highlight' key={tag}>{tag}</Link>
+              )}
+              </p>
+          
+            <div dangerouslySetInnerHTML={{ __html: postContent }} />
+            
+            <div>
+              <Link to="/" className="primaryButton">
+                Go Back
+              </Link>
+            </div>
+    
           </div>
         </div>
-      </div>
-      </div>
+
     </Layout>
   )
 }
