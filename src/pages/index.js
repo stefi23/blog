@@ -15,9 +15,9 @@ const IndexPage = ({ data, pageContext }) => {
       {data.allMarkdownRemark.edges.map(({ node }) => {
 
       return (
-        <div className='post-innerContent'>
+        <div className='post-innerContent' key={node.id}>
           <div className="article-card row">
-            <div className="col" key={node.id}>
+            <div className="col">
               <Link  to={node.fields.slug}>
                 <h1 className="post-innerContent-title-main">{node.frontmatter.title}</h1>
               </Link>
