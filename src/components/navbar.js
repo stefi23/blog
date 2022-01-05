@@ -11,8 +11,8 @@ const MyNavbar = () => (
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
               <Link to="/" className='navLink'>Home</Link>
-              <Link to="/about" className='navLink'>About</Link>
               <Link to="/tags" className='navLink'>Tags</Link>
+              <Link to="/about" className='navLink'>About</Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
