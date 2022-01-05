@@ -15,7 +15,7 @@ html {
 }
 body {
   margin: 0;
-  background-color: var(--primary-bg-color) !important;
+  background: var(--primary-bg-color) !important;
   font-size: 14px !important;
   color: var(--primary-color) !important;
 }
@@ -138,12 +138,12 @@ dfn {
 
 .post-innerContent-info-highlight:hover {
   color: var(--highlight-color);
-  background-color: var(--secondary-color);
+  background: var(--secondary-color);
   text-decoration: none;
 }
 
 mark {
-  background-color: #ff0;
+  background: #ff0;
   color: #000;
 }
 small {
@@ -631,7 +631,7 @@ td:last-child {
 }
 tt,
 code {
-  background-color: hsla(0, 0%, 0%, 0.04);
+  background: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
   font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
     "Liberation Mono", Menlo, Courier, monospace;
@@ -737,12 +737,12 @@ pre tt:after {
 }
 
 .bg-light {
-  background-color: var(--secondary-bg-color) !important;
+  background: var(--secondary-bg-color) !important;
   padding: 0px !important;
 }
 
 .navbar-expand-lg .navLink:hover {
-  background-color: var(--highlight-color);
+  background: var(--highlight-color);
   text-decoration: none;
   border-radius: 5%;
 }
@@ -796,7 +796,7 @@ a:focus {
 .content-box-main {
   margin: 10px 0px;
   padding: 40px 40px;
-  background-color: white;
+  background: white;
   border-radius: 4px;
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   align-items: center;
@@ -826,6 +826,7 @@ a:focus {
 
 .sidebar-innerContent-item :hover {
   color: #8f3774;
+  transform: scale(1.1);
   transition: all 0.5s ease;
 }
 
@@ -851,7 +852,7 @@ a:focus {
 .article-card {
   padding: 60px 60px 40px 60px;
   margin: 10px 0px;
-  background-color: white;
+  background: white;
   margin-bottom: 20px;
   border-radius: 4px;
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
@@ -860,7 +861,7 @@ a:focus {
 .navigation-card {
   border-radius: 4px;
   margin: 10px 0px;
-  background-color: white;
+  background: white;
   margin-bottom: 20px;
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
@@ -877,7 +878,7 @@ a:focus {
 .primaryButton,
 .primaryButton:visited,
 .primaryButton:link {
-  background-color: var(--primary-color);
+  background: var(--primary-color);
   border-radius: 4.5px;
   border: none;
   color: white;
@@ -937,6 +938,6 @@ a:focus {
 .sidebarCategory-link:link,
 .sidebarCategory-link :hover {
   color: var(--primary-color);
-  background-color: var(--highlight-color);
+  background: var(--highlight-color);
   text-decoration: none !important;
 }
