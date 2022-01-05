@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Banner from "../components/banner"
+import Banner from "./banner"
 
 const Header = () => (
   <header>

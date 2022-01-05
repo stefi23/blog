@@ -9,14 +9,13 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import Header from "./header/header"
 import MyNavbar from "./navbar"
 import Footer from "./footer"
-import Sidebar from "./sidebar"
+import Sidebar from "./sidebar/sidebar"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 
-import TagsPage from "../pages/tags"
 
 import "./layout.css"
 

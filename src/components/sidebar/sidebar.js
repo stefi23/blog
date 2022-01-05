@@ -1,5 +1,5 @@
 import React from "react"
-import ProfilePicture from "../components/profile-picture"
+import ProfilePicture from "./profilePicture"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
 const Sidebar = () => {
