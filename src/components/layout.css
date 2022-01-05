@@ -129,14 +129,29 @@ dfn {
 
 .post-innerContent-info-highlight,
 .post-innerContent-info-highlight:link,
-.post-innerContent-info-highlight:visited {
-  color: var(--secondary-color);
-  margin-right: 5px;
+.post-innerContent-info-highlight:visited,
+.sideBar-tags-highlight {
   background: var(--highlight-color);
+  color: var(--secondary-color);
+  margin-right: 8px;
   padding: 2px 8px;
 }
 
-.post-innerContent-info-highlight:hover {
+.sideBar-tags {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sideBar-tags-highlight {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.post-innerContent-info-highlight:hover,
+.sideBar-tags-highlight:hover {
   color: var(--highlight-color);
   background: var(--secondary-color);
   text-decoration: none;

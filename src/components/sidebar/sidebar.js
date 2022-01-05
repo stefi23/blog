@@ -11,6 +11,11 @@ const Sidebar = () => {
             fieldValue
           }
         }
+        tagsGroup: allMarkdownRemark(limit: 2000) {
+          group(field: frontmatter___tags) {
+            fieldValue
+          }
+        }
       }
     `
   )
@@ -90,7 +95,6 @@ const Sidebar = () => {
             </p>
           </div>
         </div>
-        {/* <div className="content-box-main flex-column d-flex">About Blog</div> */}
         <div className="content-box-sidebar flex-column d-flex">
           <h2 className="text-center sidebar-innerContent-title">categories:</h2>
           <div>
@@ -106,7 +110,18 @@ const Sidebar = () => {
             ))}
           </div>
         </div>
-        {/* <div className="content-box-main flex-column d-flex">Archive</div> */}
+
+         <div className="content-box-sidebar flex-column d-flex">
+          <h2 className="text-center sidebar-innerContent-title">tags:</h2>
+          <div className="sideBar-tags">
+            {result.tagsGroup.group.map(tag => (
+                <Link key={tag.fieldValue} className="sideBar-tags-highlight">
+                    <span>{tag.fieldValue}</span>
+                </Link>
+            ))}
+          </div>
+        </div>
+        
       </div>
     </header>
   )
