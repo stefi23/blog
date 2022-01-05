@@ -6,7 +6,7 @@ categories: "Barcelona"
 featuredImage: "./biblioteca-garden.jpg"
 ---
 
-A long while ago I bought a book called 111 Places In Barcelona That You Mush Not Miss and decided to take the challenge to see all these places. Especially during these times when we are not allowed to travel outside of Barcelona, it seems the perfect thing to do.
+A long while ago I bought a book called 111 Places In Barcelona That You Must Not Miss and decided to take the challenge to see all these places. Especially during these times when we are not allowed to travel outside of Barcelona, it seems the perfect thing to do.
 
 Last night I picked no.78 **Parc Central de Nou Barris**. The park is located quite far from the center of Barcelona. But maybe this BCN far is not that far. I didn’t have many expectations about it until I read that it won the “Urban Landscape Award” in Frankfurt, Germany. The park was chosen from some 60 applications from Germany, the US, Mexico and my dream country Switzerland.
 
