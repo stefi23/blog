@@ -115,7 +115,7 @@ const Sidebar = () => {
           <h2 className="text-center sidebar-innerContent-title">tags:</h2>
           <div className="sideBar-tags">
             {result.tagsGroup.group.map(tag => (
-                <Link key={tag.fieldValue} className="sideBar-tags-highlight">
+                <Link key={tag.fieldValue} className="sideBar-tags-highlight" to={`tags/${(tag.fieldValue).toLowerCase()}`}>
                     <span>{tag.fieldValue}</span>
                 </Link>
             ))}
