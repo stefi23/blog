@@ -38,7 +38,7 @@ const Categories = ({ pageContext, data }) => {
             <div className="article-card row">
               <div className="col" key={id}>
                 <Link to={slug}>
-                  <h1 className="post-innerContent-title">{title}</h1>
+                  <h1 className="post-innerContent-title-main">{title}</h1>
                 </Link>
                  <span className="post-innerContent-info">
                  {`${date} •
