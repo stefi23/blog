@@ -766,8 +766,14 @@ pre tt:after {
   padding: 0px !important;
 }
 
-a:link {
+.articleLink {
   color: #942874;
+  text-decoration: underline;
+}
+
+.articleLink:hover {
+  background: var(--secondary-color);
+  color: var(--highlight-color);
   text-decoration: none;
 }
 
