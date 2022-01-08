@@ -8,7 +8,7 @@ featuredImage: "../images/banner.jpg"
 
 Dear friends, family and everyone in between,
 
-I'm finally starting my very own blog. When I was younger I had a blog hosted on blogspot and it always annoyed me that I cannot customize it as much as I want. After learning coding and about static website generaters like GatsbyJS I decided to give this a shot and create a blog without a CMS and instead markdown files. Gatsby is super cool and I am excited to start sharing more content soon.
+I'm finally starting my very own blog. When I was younger I had a blog hosted on blogspot and it always annoyed me that I cannot customize it as much as I wanted. After learning to code and about static website generators like Gatsby I decided to give this a shot and create my blog without a CMS and instead use markdown files. Gatsby is super cool and I am excited to start sharing more content soon.
 
 Now that we are live the challenge will be to actually write :)
 
@@ -26,4 +26,4 @@ Hope you will enjoy it!
 
 Cheers :)
 
-> PS. Date of this post is not real. Blog was started on 2014-04-14
+> PS. Date of this post is not real. Blog was started on 2020-04-14
