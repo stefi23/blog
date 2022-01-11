@@ -100,7 +100,7 @@ const Sidebar = () => {
           <div>
             {result.categoriesGroup.group.map(category => (
               <Link key={category.fieldValue}
-                to={`category/${(category.fieldValue).toLowerCase()}`}
+                to={`/category/${(category.fieldValue).toLowerCase()}`}
                 className="sidebarCategory-link"
               >
                 <p className="border p-2 sidebarCategory-link">
@@ -115,7 +115,7 @@ const Sidebar = () => {
           <h2 className="text-center sidebar-innerContent-title">tags:</h2>
           <div className="sideBar-tags">
             {result.tagsGroup.group.map(tag => (
-                <Link key={tag.fieldValue} className="sideBar-tags-highlight" to={`tags/${(tag.fieldValue).toLowerCase()}`}>
+                <Link key={tag.fieldValue} className="sideBar-tags-highlight" to={`/tags/${(tag.fieldValue).toLowerCase()}`}>
                     <span>{tag.fieldValue}</span>
                 </Link>
             ))}
