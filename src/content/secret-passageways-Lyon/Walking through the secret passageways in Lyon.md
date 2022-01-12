@@ -1,5 +1,5 @@
 ---
-title: "Walking through the secret passageways/traboules in Lyon"
+title: "Walking through the secret passageways / traboules in Lyon"
 date: "2022-01-08"
 tags: ["travel", "France", "Lyon"]
 categories: "travel"
