@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-templates-tags-js","path":"/tags/parc/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/second-biggest-park-in-Barcelona/"},"frontmatter":{"title":"The second biggest park in Barcelona"}}}]}},"pageContext":{"tag":"parc"}}}
+{
+    "componentChunkName": "component---src-templates-tags-js",
+    "path": "/tags/parc/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/second-biggest-park-in-Barcelona/"},"frontmatter":{"title":"The second biggest park in Barcelona"}}}]}},"pageContext":{"tag":"parc"}},
+    "staticQueryHashes": ["32046230","3575884307","3649515864","3861544978","565753328"]}

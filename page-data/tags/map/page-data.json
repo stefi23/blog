@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-templates-tags-js","path":"/tags/map/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/barcelona-recommendations-map-local/"},"frontmatter":{"title":"Barcelona recommendations map with local tips"}}}]}},"pageContext":{"tag":"map"}}}
+{
+    "componentChunkName": "component---src-templates-tags-js",
+    "path": "/tags/map/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/barcelona-recommendations-map-local/"},"frontmatter":{"title":"Barcelona recommendations map with local tips"}}}]}},"pageContext":{"tag":"map"}},
+    "staticQueryHashes": ["32046230","3575884307","3649515864","3861544978","565753328"]}

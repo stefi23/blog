@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-templates-tags-js","path":"/tags/blog/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/post1/"},"frontmatter":{"title":"Welcome to my blog"}}}]}},"pageContext":{"tag":"blog"}}}
+{
+    "componentChunkName": "component---src-templates-tags-js",
+    "path": "/tags/blog/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/post1/"},"frontmatter":{"title":"Welcome to my blog"}}}]}},"pageContext":{"tag":"blog"}},
+    "staticQueryHashes": ["32046230","3575884307","3649515864","3861544978","565753328"]}
