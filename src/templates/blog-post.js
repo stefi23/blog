@@ -82,7 +82,7 @@ export default ({ data }) => {
               <h1 className="post-innerContent-title">{title}</h1>
               <span className="post-innerContent-info">
                  {`${date} •
-                  ${timeToRead} min read`} • <Link className="post-innerContent-info-link" to={`category/${(category).toLowerCase()}`}>category: {category}</Link> 
+                  ${timeToRead} min read`} • <Link className="post-innerContent-info-link" to={`/category/${(category).toLowerCase()}`}>category: {category}</Link> 
               </span>
               <p>
               {tags.map(tag => 

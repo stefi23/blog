@@ -22,7 +22,7 @@ const IndexPage = ({ data, pageContext }) => {
                 <h1 className="post-innerContent-title-main">{node.frontmatter.title}</h1>
               </Link>
                 <span className="post-innerContent-info">
-                 {`${node.frontmatter.date} • ${node.timeToRead} min read`} • <Link className="post-innerContent-info-link" to={`category/${(node.frontmatter.categories).toLowerCase()}`}>category: {node.frontmatter.categories}</Link>  
+                 {`${node.frontmatter.date} • ${node.timeToRead} min read`} • <Link className="post-innerContent-info-link" to={`/category/${(node.frontmatter.categories).toLowerCase()}`}>category: {node.frontmatter.categories}</Link>  
                 </span>
                 <p>
                 {node.frontmatter.tags.map(tag => 
