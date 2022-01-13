@@ -10,7 +10,7 @@ const Categories = ({ pageContext, data }) => {
 
   return (
     <Layout>
-      <SEO title={category} />
+      <SEO title={category} canonical={`/category/${category}`} />
         <div className="row categories-innerContent">
           <div className="col-md-12 navigation-card">
             <div className="row">

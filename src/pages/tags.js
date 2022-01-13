@@ -21,7 +21,7 @@ return  (
   <div>
     <Helmet title="Tags" />
     <Layout>
-      <SEO title="Tags" />
+      <SEO title="Tags" canonical="/tags"/>
       <div className="tags-innerContent">
         <div className="article-card row">
           <div className="col">

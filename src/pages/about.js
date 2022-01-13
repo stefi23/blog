@@ -21,7 +21,7 @@ const About = () => {
 
   return (
     <Layout>
-      <SEO title="About" />
+      <SEO title="About"  canonical="/about"/>
       <div className="about-innerContent">
         <div className="article-card row">
           <div className="col">

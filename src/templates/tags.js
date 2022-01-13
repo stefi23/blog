@@ -17,7 +17,7 @@ const Tags = ({ pageContext, data }) => {
   return (
     <div>
       <Layout>
-        <SEO title={tagHeader} />
+        <SEO title={tagHeader} canonical={`/tags/${tag}`}/>
 
         <div className="tags-innerContent">
           <div className="article-card row">

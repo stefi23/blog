@@ -10,7 +10,7 @@ const IndexPage = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Home" canonical=""/>
 
       {data.allMarkdownRemark.edges.map(({ node }) => {
 
