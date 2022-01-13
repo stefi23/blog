@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title, image }) {
+function SEO({ description, lang, meta, title, image, canonical }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -26,7 +26,13 @@ function SEO({ description, lang, meta, title, image }) {
     `
   )
 
+  const metaTitle = title || site.siteMetadata.title
   const metaDescription = description || site.siteMetadata.description
+  const metaImage = image || site.siteMetadata.image
+
+  const siteURL = `https://stefi.xyz/blog`
+
+  const metaCanonical = `${siteURL}${canonical}`
 
   return (
     <Helmet
@@ -38,15 +44,15 @@ function SEO({ description, lang, meta, title, image }) {
       meta={[
         {
           name: `description`,
-          content: site.siteMetadata.description,
+          content: metaDescription,
         },
         {
           property: `og:title`,
-          content: title,
+          content: metaTitle,
         },
         {
           property: `og:description`,
-          content: site.siteMetadata.description,
+          content: metaDescription,
         },
         {
           property: `og:type`,
@@ -62,7 +68,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: metaTitle,
         },
         {
           name: `twitter:description`,
@@ -70,11 +76,10 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           name: `twitter:image`,
-          content: site.siteMetadata.image,
+          content: metaImage,
         },
       ].concat(meta)}
     >
-      <meta name="twitter:image" content={`${site.siteMetadata.image}`}></meta>
       <link
         href="https://fonts.googleapis.com/css?family=Do+Hyeon|Gaegu:400,700|Gamja+Flower|Nanum+Gothic: 400,700|Indie+Flower|Roboto|Open+Sans:300,400,600,700&display=swap"
         rel="stylesheet"
@@ -90,6 +95,10 @@ function SEO({ description, lang, meta, title, image }) {
         href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous"
+      />
+      <link
+        rel="canonical"
+        href={metaCanonical}
       />
     </Helmet>
   )
