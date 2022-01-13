@@ -14,6 +14,7 @@ const NavBtn = ({ label, to = "#", isDisabled = false, direction }) => {
 }
 
 export default ({ prefix = "/page", currentPage, totalPages }) => {
+
   return (
     <div
       className="row mt-2 nav-innerContent"
