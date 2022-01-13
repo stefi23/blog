@@ -29,53 +29,16 @@ export default ({ data }) => {
 
   const category = categories
   const postContent = html
+
   
   return (
     <Layout>
-      <Helmet>
-        <link
-          href="https://fonts.googleapis.com/css?family=Do+Hyeon|Gaegu:400,700|Gamja+Flower|Nanum+Gothic: 400,700|Indie+Flower|Roboto|Open+Sans:300,400,600,700&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-          crossorigin="anonymous"
-        />        <title>{`${title} | ${data.site.siteMetadata.title}`}</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-          property="og:title"
-          content={`${title} | ${data.site.siteMetadata.title}`}
-        />
-        <meta property="og:description" content={excerpt} />
-        <meta
-          property="og:image"
-          content={`http://www.stefi.xyz${featuredImage.childImageSharp.sizes.src}`}
-        />
-        <meta
-          name="twitter:image"
-          content={`http://www.stefi.xyz${featuredImage.childImageSharp.sizes.src}`}
-        ></meta>
-        <meta
-          property="og:url"
-          content={`http://www.stefi.xyz/blog${slug}`}
-        />
-        <meta name="twitter:card" content="summary" />
-        <meta property="og:type" content="article" />
-        <meta property="og:locale" content="en_US" />
-        <link
-          rel="canonical"
-          href={`http://www.stefi.xyz/blog${slug}`}
-        /> 
-      </Helmet>
-      {/* <SEO
-        title={post.frontmatter.title}
-        description={post.excerpt}
-        featuredImage={post.frontmatter.featuredImage}
-      /> */}
- 
+      <SEO
+        title={title}
+        description={excerpt}
+        image={featuredImage.childImageSharp.sizes.src}
+        canonical={slug}
+      />
         <div className="article-card">
            <div className="col">
 
