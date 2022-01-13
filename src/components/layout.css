@@ -4,7 +4,7 @@
   --primary-color: #581845;
   --secondary-color: #77205d;
   --highlight-color: #e3f4f5;
-  --primary-bg-color: #352d39;
+  --primary-bg-color: #fff;
   --secondary-bg-color: #fcfcfc;
 }
 
@@ -68,11 +68,16 @@ dfn {
 .post-innerContent-title,
 .tags-innerContent-title,
 .post-innerContent-title-main {
-  margin: 0.67em 0;
   color: var(--primary-color);
   font-family: "Open Sans", sans-serif;
-  font-weight: 700;
   font-size: 30px;
+  font-weight: 700;
+  margin: 0.67em 0;
+  margin-top: 0;
+}
+
+.header {
+  box-shadow: 0 0px 30px 0 rgb(0 0 0 / 20%);
 }
 
 .about-innerContent-title,
@@ -83,6 +88,7 @@ dfn {
   font-weight: 700;
   line-height: 35px;
   margin: 0.67em 0;
+  margin-top: 0;
 }
 
 .post-innerContent-title-main:hover {
@@ -93,7 +99,7 @@ dfn {
 .post-innerContent-date,
 .post-innerContent-info {
   font-family: "Open Sans", sans-serif;
-  color: #8f3774;
+  color: gray;
   font-size: 12px;
 }
 
@@ -132,7 +138,7 @@ dfn {
 .post-innerContent-info-highlight:visited,
 .sideBar-tags-highlight {
   background: var(--highlight-color);
-  color: var(--secondary-color);
+  color: var(--primary-color);
   margin-right: 8px;
   padding: 2px 8px;
 }
@@ -414,7 +420,7 @@ hgroup {
 
 ol,
 ul {
-  color: var(--primary-color);
+  color: #352d39;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   list-style-image: none;
@@ -450,7 +456,8 @@ dd {
   margin-bottom: 1.45rem;
 }
 p {
-  color: var(--primary-color);
+  color: #352d39;
+  line-height: 1.3rem;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   margin-left: 0;
@@ -677,6 +684,11 @@ pre tt:after {
     font-size: 100%;
   }
 
+  .navLink,
+  .navBar {
+    padding: 12px !important;
+  }
+
   .post-innerContent-content,
   .post-innerContent-readMore {
     font-size: 16px;
@@ -735,39 +747,36 @@ pre tt:after {
   }
 }
 
-.navbar-light,
-.nav-item.active,
+.navBar {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  padding: 16px 0;
+  background: var(--primary-bg-color);
+  box-shadow: 0 0px 30px 0 rgb(0 0 0 / 20%);
+}
+
 .navLink,
-.navLink:hover,
-.navLink:visited,
-.navLink:link {
+.navLink:link,
+.navLink:hover {
   color: var(--primary-color);
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
-  padding: 15px;
-}
-
-.navbar-expand-lg .navbar-collapse {
-  padding: 5px;
-}
-
-.bg-light {
-  background: var(--secondary-bg-color) !important;
-  padding: 0px !important;
-}
-
-.navbar-expand-lg .navLink:hover {
-  background: var(--highlight-color);
+  padding: 18px;
   text-decoration: none;
-  border-radius: 5%;
 }
 
-.navbar-expand-lg .navbar-collapse {
-  padding: 0px !important;
+@media (hover: hover) {
+  .navLink:hover,
+  .navLink:link:hover {
+    background: var(--highlight-color);
+    text-decoration: none;
+    border-radius: 5%;
+  }
 }
 
 .articleLink {
-  color: #942874;
+  color: var(--primary-color);
   text-decoration: underline;
 }
 
@@ -804,13 +813,12 @@ a:focus {
 }
 
 .footer-innerContent {
-  background: var(--secondary-bg-color);
+  background: var(--primary-bg-color);
   border-radius: 4px;
   color: var(--primary-color);
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  margin-bottom: 20px;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
 }
 
@@ -819,7 +827,7 @@ a:focus {
   padding: 40px 40px;
   background: white;
   border-radius: 4px;
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  box-shadow: 0 0px 30px 0 rgb(0 0 0 / 20%);
   align-items: center;
   justify-content: center;
   display: flex;
@@ -830,7 +838,7 @@ a:focus {
   padding: 40px 40px;
   background-color: white;
   border-radius: 4px;
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  box-shadow: 0 0px 30px 0 rgb(0 0 0 / 20%);
   justify-content: center;
   display: flex;
 }
@@ -876,7 +884,7 @@ a:focus {
   background: white;
   margin-bottom: 20px;
   border-radius: 4px;
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  box-shadow: 0 0px 20px 0 rgb(0 0 0 / 20%);
 }
 
 .navigation-card {
@@ -884,7 +892,7 @@ a:focus {
   margin: 10px 0px;
   background: white;
   margin-bottom: 20px;
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  box-shadow: 0 0px 30px 0 rgb(0 0 0 / 20%);
 }
 
 .post-innerContent,
