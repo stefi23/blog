@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-tags-js",
     "path": "/tags/coffee/",
-    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/on-trust/"},"frontmatter":{"title":"On Trust"}}}]}},"pageContext":{"tag":"coffee"}},
+    "result": {"data":{"allMarkdownRemark":{"totalCount":2,"edges":[{"node":{"fields":{"slug":"/top5-coffee-shops-barcelona/"},"frontmatter":{"title":"Top 5 Coffee Shops in Barcelona rated by a local"}}},{"node":{"fields":{"slug":"/on-trust/"},"frontmatter":{"title":"On Trust"}}}]}},"pageContext":{"tag":"coffee"}},
     "staticQueryHashes": ["32046230","3575884307","3649515864","3861544978","565753328"]}
