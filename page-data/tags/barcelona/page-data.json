@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-tags-js",
     "path": "/tags/barcelona/",
-    "result": {"data":{"allMarkdownRemark":{"totalCount":4,"edges":[{"node":{"fields":{"slug":"/top5-coffee-shops-barcelona/"},"frontmatter":{"title":"Top 5 Coffee Shops in Barcelona rated by a local"}}},{"node":{"fields":{"slug":"/barcelona-recommendations-map-local/"},"frontmatter":{"title":"Barcelona recommendations map with local tips"}}},{"node":{"fields":{"slug":"/second-biggest-park-in-Barcelona/"},"frontmatter":{"title":"The second biggest park in Barcelona"}}},{"node":{"fields":{"slug":"/on-trust/"},"frontmatter":{"title":"On Trust"}}}]}},"pageContext":{"tag":"Barcelona"}},
+    "result": {"data":{"allMarkdownRemark":{"totalCount":4,"edges":[{"node":{"fields":{"slug":"/top-coffee-shops-barcelona/"},"frontmatter":{"title":"The 5 best Coffee Shops in Barcelona rated by a local"}}},{"node":{"fields":{"slug":"/barcelona-recommendations-map-local/"},"frontmatter":{"title":"Barcelona recommendations map with local tips"}}},{"node":{"fields":{"slug":"/second-biggest-park-in-Barcelona/"},"frontmatter":{"title":"The second biggest park in Barcelona"}}},{"node":{"fields":{"slug":"/on-trust/"},"frontmatter":{"title":"On Trust"}}}]}},"pageContext":{"tag":"Barcelona"}},
     "staticQueryHashes": ["32046230","3575884307","3649515864","3861544978","565753328"]}
