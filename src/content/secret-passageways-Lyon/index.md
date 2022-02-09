@@ -1,5 +1,5 @@
 ---
-title: "Walking through the secret passageways / traboules in Lyon"
+title: "Walking through the secret passageways / traboules of Lyon"
 date: "2022-01-08"
 tags: ["travel", "France", "Lyon"]
 categories: "travel"
@@ -61,4 +61,6 @@ If you are curious to know more about the history of Lyon's traboules I recommen
 <br />
 <br />
 
-<iframe src="https://open.spotify.com/embed/episode/4cNhFh1T27BJlHtY002FCM?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+<div class="embed-responsive embed-responsive-4by3">
+    <iframe src="https://open.spotify.com/embed/episode/4cNhFh1T27BJlHtY002FCM?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+</div>
