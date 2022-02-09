@@ -970,3 +970,7 @@ a:focus {
   background: var(--highlight-color);
   text-decoration: none !important;
 }
+
+.paddingTop {
+  padding-top: 0;
+}
