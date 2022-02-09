@@ -24,17 +24,16 @@ export default ({ data }) => {
 
   const { slug } = fields
 
-  const { title, date, tags, categories, featuredImage } =  frontmatter
+  const { title, date, tags, categories, featuredImage, description } =  frontmatter
 
   const category = categories
   const postContent = html
-
   
   return (
     <Layout>
       <SEO
         title={title}
-        description={excerpt}
+        description={description || excerpt}
         image={featuredImage.childImageSharp.sizes.src}
         canonical={slug}
       />
@@ -64,7 +63,6 @@ export default ({ data }) => {
     
           </div>
         </div>
-
     </Layout>
   )
 }
@@ -91,6 +89,7 @@ export const query = graphql`
         tags
         categories
         date(formatString: "MMMM DD, YYYY")
+        description
         featuredImage {
           childImageSharp {
             sizes(maxWidth: 600) {
