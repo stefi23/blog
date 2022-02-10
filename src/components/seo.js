@@ -59,6 +59,14 @@ function SEO({ description, lang, meta, title, image, canonical }) {
           content: `website`,
         },
         {
+          property: `og:image`,
+          content: metaImage,
+        },
+        {
+          property: `og:url`,
+          content: metaCanonical,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
@@ -96,10 +104,7 @@ function SEO({ description, lang, meta, title, image, canonical }) {
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous"
       />
-      <link
-        rel="canonical"
-        href={metaCanonical}
-      />
+      <link rel="canonical" href={metaCanonical} />
     </Helmet>
   )
 }
