@@ -4,31 +4,45 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../components/layout.css"
 
-export default ({ data }) => {
-  if (!data) {
+export default props => {
+  console.log(props) //to correct to data
+  if (!props) {
     return (
-    <Layout>
-          <div className="post-innerContent">
-        <div className="article-card row">
-          <div>
-            <h1 className="post-innerContent-title">Oh, no! Something went wrong!</h1>
+      <Layout>
+        <div className="post-innerContent">
+          <div className="article-card row">
+            <div>
+              <h1 className="post-innerContent-title">
+                Oh, no! Something went wrong!
+              </h1>
+            </div>
           </div>
         </div>
-      </div>
-    </Layout> 
-    )}
+      </Layout>
+    )
+  }
 
-  const {markdownRemark} = data
+  const { data, pageContext } = props
+  const { next, previous } = pageContext
 
-  const { timeToRead, frontmatter ,html, excerpt, fields} = markdownRemark
+  const { markdownRemark } = data
+
+  const { timeToRead, frontmatter, html, excerpt, fields } = markdownRemark
 
   const { slug } = fields
 
-  const { title, date, tags, categories, featuredImage, description } =  frontmatter
+  const {
+    title,
+    date,
+    tags,
+    categories,
+    featuredImage,
+    description,
+  } = frontmatter
 
   const category = categories
   const postContent = html
-  
+
   return (
     <Layout>
       <SEO
@@ -37,32 +51,66 @@ export default ({ data }) => {
         image={featuredImage.childImageSharp.sizes.src}
         canonical={slug}
       />
-        <div className="article-card">
-           <div className="col">
-
-              <h1 className="post-innerContent-title">{title}</h1>
-              <span className="post-innerContent-info">
-                 {`${date} •
-                  ${timeToRead} min read`} • <Link className="post-innerContent-info-link" to={`/category/${(category).toLowerCase()}`}>category: {category}</Link> 
-              </span>
-              <p>
-              {tags.map(tag => 
-              <Link to={`/tags/${(tag).toLowerCase()}/`} className='post-innerContent-info-highlight' key={tag}>{tag}</Link>
-              )}
-              </p>
-          
-            <div dangerouslySetInnerHTML={{ __html: postContent }} />
-            
-            <div>
-              <Link to="/" >
-                <button className="primaryButton">
-                Go Back to Home page
-                </button>
+      <div className="article-card">
+        <div className="col">
+          <h1 className="post-innerContent-title">{title}</h1>
+          <span className="post-innerContent-info">
+            {`${date} •
+                  ${timeToRead} min read`}{" "}
+            •{" "}
+            <Link
+              className="post-innerContent-info-link"
+              to={`/category/${category.toLowerCase()}`}
+            >
+              category: {category}
+            </Link>
+          </span>
+          <p>
+            {tags.map(tag => (
+              <Link
+                to={`/tags/${tag.toLowerCase()}/`}
+                className="post-innerContent-info-highlight"
+                key={tag}
+              >
+                {tag}
               </Link>
+            ))}
+          </p>
+
+          <div dangerouslySetInnerHTML={{ __html: postContent }} />
+          <div>
+            <div
+              className="row mt-2 nav-innerContent"
+              style={{ borderRadius: "4px" }}
+            >
+              <div className="col-md-12 ">
+                <div className="row">
+                  <div className="col-6 p-2 d-flex align-items-center justify-content-start pl-3">
+                    {previous && (
+                      <Link
+                        to={previous?.fields?.slug}
+                        className={`p-1 navigationButton navigationButton-left`}
+                      >
+                        ← {previous?.frontmatter.title}
+                      </Link>
+                    )}
+                  </div>
+                  <div className="col-6 p-2 d-flex align-items-center justify-content-end pr-3">
+                    {next && (
+                      <Link
+                        to={next?.fields?.slug}
+                        className={`p-1 navigationButton navigationButton-right`}
+                      >
+                        {next?.frontmatter.title} →
+                      </Link>
+                    )}
+                  </div>
+                </div>
+              </div>
             </div>
-    
           </div>
         </div>
+      </div>
     </Layout>
   )
 }

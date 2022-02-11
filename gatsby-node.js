@@ -75,15 +75,23 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const numPages = Math.ceil(result.data.postsRemark.totalCount / postPerPage)
 
   const posts = result.data.postsRemark.edges
+
   // Create post detail pages
-  posts.forEach(({ node }) => {
+  posts.forEach((post, index) => {
+    const previous = index === posts.length - 1 ? null : posts[index + 1].node
+    const next = index === 0 ? null : posts[index - 1].node
+
+    const { node } = post
+
     createPage({
       path: node.fields.slug,
       component: blogPostTemplate,
+      context: {
+        previous,
+        next,
+      },
     })
   })
-
-  // console.log("posts per page: ", postPerPage)
 
   Array.from({ length: numPages }).forEach((_, i) => {
     actions.createPage({
