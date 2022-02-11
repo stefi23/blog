@@ -16,7 +16,6 @@ import Sidebar from "./sidebar/sidebar"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 
-
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -40,15 +39,12 @@ const Layout = ({ children }) => {
     >
       <Header siteTitle={data.site.siteMetadata.title} />
       <MyNavbar />
-      <div className="row mt-2">
-        <div className="col-md-8">
-          <main>{children}</main>
-        </div>
-        <div className="col-md-4">
+      <section className="row mt-2">
+        <main className="col-md-8">{children}</main>
+        <aside className="col-md-4">
           <Sidebar />
-          
-        </div>
-      </div>
+        </aside>
+      </section>
       <Footer />
     </div>
   )

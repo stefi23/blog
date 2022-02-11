@@ -51,63 +51,66 @@ const BlogPost = props => {
         image={featuredImage.childImageSharp.sizes.src}
         canonical={slug}
       />
-      <div className="article-card">
+      <article className="article-card">
         <div className="col">
-          <h1 className="post-innerContent-title">{title}</h1>
-          <span className="post-innerContent-info">
-            {`${date} •
+          <header>
+            <h1 className="post-innerContent-title">{title}</h1>
+            <span className="post-innerContent-info">
+              {`${date} •
                   ${timeToRead} min read`}{" "}
-            •{" "}
-            <Link
-              className="post-innerContent-info-link"
-              to={`/category/${category.toLowerCase()}`}
-            >
-              category: {category}
-            </Link>
-          </span>
-          <p>
-            {tags.map(tag => (
+              •{" "}
               <Link
-                to={`/tags/${tag.toLowerCase()}/`}
-                className="post-innerContent-info-highlight"
-                key={tag}
+                className="post-innerContent-info-link"
+                to={`/category/${category.toLowerCase()}`}
               >
-                {tag}
+                category: {category}
               </Link>
-            ))}
-          </p>
+            </span>
+            <p>
+              {tags.map(tag => (
+                <Link
+                  to={`/tags/${tag.toLowerCase()}/`}
+                  className="post-innerContent-info-highlight"
+                  key={tag}
+                >
+                  {tag}
+                </Link>
+              ))}
+            </p>
+          </header>
 
-          <div dangerouslySetInnerHTML={{ __html: postContent }} />
-
-          <div className="row mt-2">
-            <div className="col-md-12 ">
-              <div className="row p-3">
-                <div className="col-12 p-0 pr-2 mb-2 d-flex align-items-center justify-content-start">
-                  <h3 className="post-footer-title">More articles:</h3>
-                </div>
-                <div className="col-6 p-0 pr-2 d-flex align-items-center justify-content-start">
-                  {previous && (
-                    <NavLink
-                      to={previous?.fields?.slug}
-                      text={`←  ${previous?.frontmatter.title}`}
-                      direction="left"
-                    />
-                  )}
-                </div>
-                <div className="col-6 p-0 pl-2 d-flex align-items-center justify-content-end">
-                  {next && (
-                    <NavLink
-                      to={next?.fields?.slug}
-                      text={`${next?.frontmatter.title} →`}
-                      direction="right"
-                    />
-                  )}
+          <main dangerouslySetInnerHTML={{ __html: postContent }} />
+          <footer>
+            <div className="row mt-2">
+              <div className="col-md-12 ">
+                <div className="row p-3">
+                  <div className="col-12 p-0 pr-2 mb-2 d-flex align-items-center justify-content-start">
+                    <h3 className="post-footer-title">More articles:</h3>
+                  </div>
+                  <div className="col-6 p-0 pr-2 d-flex align-items-center justify-content-start">
+                    {previous && (
+                      <NavLink
+                        to={previous?.fields?.slug}
+                        text={`←  ${previous?.frontmatter.title}`}
+                        direction="left"
+                      />
+                    )}
+                  </div>
+                  <div className="col-6 p-0 pl-2 d-flex align-items-center justify-content-end">
+                    {next && (
+                      <NavLink
+                        to={next?.fields?.slug}
+                        text={`${next?.frontmatter.title} →`}
+                        direction="right"
+                      />
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </footer>
         </div>
-      </div>
+      </article>
     </Layout>
   )
 }
