@@ -4,9 +4,10 @@ date: "2022-01-07"
 tags: ["Barcelona", "travel", "map"]
 categories: "Barcelona"
 featuredImage: "./barcelona-map.png"
+description: "A Barcelona map full of recommendation of places to visit, museums, coffee shops, restaurants and touristic attractions currated by a local."
 ---
 
-Living in Barcelona for almost 5 years I have a lot of recommendation of coffee shops, restaurants, place to see, restaurants and touristic attractions. To make it easier to share this with friends I have decided to create a <a  class="articleLink" href="https://www.google.com/maps/d/viewer?mid=1_AbMYdBiQDeHYSW9ipuHl0lMhoClA0F0&usp=sharing">Google Map</a> that can be added as a layer on ones Google Maps.
+Living in Barcelona for almost 5 years I have a lot of recommendation of coffee shops, restaurants, place to see, museums and touristic attractions. To make it easier to share this with friends I have decided to create a <a  class="articleLink" href="https://www.google.com/maps/d/viewer?mid=1_AbMYdBiQDeHYSW9ipuHl0lMhoClA0F0&usp=sharing">Google Map</a> that can be added as a layer on ones Google Maps.
 
 The places I've added have a small note of why I put them on the lists and some tips and tricks. For example if I share a museum, you might find the info of how to get free tickets to this it.
 

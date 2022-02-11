@@ -4,6 +4,7 @@ date: "2021-03-27"
 tags: ["Barcelona", "parc", "travel"]
 categories: "Barcelona"
 featuredImage: "./biblioteca-garden.jpg"
+description: "Parc Central de Nou Barris, the second biggest park in Barcelona, won the “Urban Landscape Award” in Frankfurt, Germany "
 ---
 
 A long while ago I bought a book called 111 Places In Barcelona That You Must Not Miss and decided to take the challenge to see all these places. Especially during these times when we are not allowed to travel outside of Barcelona, it seems the perfect thing to do.

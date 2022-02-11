@@ -4,6 +4,7 @@ date: "2022-01-08"
 tags: ["travel", "France", "Lyon"]
 categories: "travel"
 featuredImage: "./cover-traboules.jpg"
+description: "Discover Lyon's secret passageways known as traboules located in the Croix-Rousse neighborhood with this map."
 ---
 
 ![2 people walking through a traboules(passageway) ](./cover-traboules.jpg)

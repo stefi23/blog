@@ -4,6 +4,7 @@ date: "2014-04-14"
 tags: ["blog"]
 categories: "uncategorised"
 featuredImage: "../images/banner.jpg"
+description: "I'm finally starting my very own blog. My plan is to write about my travel adventures, Barcelona tips and tricks, share recommendations and so much more."
 ---
 
 Dear friends, family and everyone in between,

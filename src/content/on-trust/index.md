@@ -15,4 +15,4 @@ Today I had brunch there again and did my usual reading and writing. When I want
 If you are in Barcelona and want to have coffee go to a place where people trust you.
 Such a place could be Cafe Búho.
 
-> > **Update:** Cafe Buho has closed in the meantime.
+**Update:** Cafe Buho has closed in the meantime.
