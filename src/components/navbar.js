@@ -2,17 +2,23 @@ import React from "react"
 import { Link } from "gatsby"
 
 const MyNavbar = () => (
-  <header>
+  <nav>
     <div className="row">
       <div className="col-md-12 mt-3">
-          <div className="navBar rounded">
-              <Link to="/" className='navLink'>Home</Link>
-              <Link to="/tags" className='navLink'>Tags</Link>
-              <Link to="/about" className='navLink'>About</Link>
-            </div>
+        <div className="navBar rounded">
+          <Link to="/" className="navLink">
+            Home
+          </Link>
+          <Link to="/tags" className="navLink">
+            Tags
+          </Link>
+          <Link to="/about" className="navLink">
+            About
+          </Link>
+        </div>
       </div>
     </div>
-  </header>
+  </nav>
 )
 
 export default MyNavbar
