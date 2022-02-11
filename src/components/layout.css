@@ -70,7 +70,7 @@ dfn {
 .post-innerContent-title-main {
   color: var(--primary-color);
   font-family: "Open Sans", sans-serif;
-  font-size: 30px;
+  font-size: 30px !important;
   font-weight: 700;
   margin: 0.67em 0;
   margin-top: 0;
