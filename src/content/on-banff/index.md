@@ -3,11 +3,11 @@ title: "On Banff"
 date: "2020-04-28"
 tags: ["travel", "Canada", "Banff"]
 categories: "travel"
-featuredImage: "../images/Banff.jpg"
+featuredImage: "./Banff.jpg"
 description: "Sometime ago I watched a YouTube video called “The Bucked Shot” from Peter McKinnon about a region in Canada called Banff. I fell in love with this place."
 ---
 
-![Image with book about Banff](../images/Banff.jpg)
+![Image with book about Banff](./Banff.jpg)
 
 Sometime ago I watched a YouTube video called “The Bucked Shot” from <a href="https://www.youtube.com/channel/UC3DkFux8Iv-aYnTRWzwaiBA" target="_blank" class="articleLink">Peter McKinnon</a>. I made many of my friends watch this video and watched it myself a million times. It’s not only about Banff but his touch of the story got me interested in this place.
 

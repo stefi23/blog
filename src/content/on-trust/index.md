@@ -3,10 +3,10 @@ title: "On Trust"
 date: "2017-09-09"
 tags: ["coffee", "Barcelona", "trust", "fun"]
 categories: "Barcelona"
-featuredImage: "../images/on-trust.jpg"
+featuredImage: "./on-trust.jpg"
 ---
 
-![Image from the beach taken on the same rainy day](../images/on-trust.jpg)
+![Image from the beach taken on the same rainy day](./on-trust.jpg)
 
 One Saturday I was trying to get a coffee at Granja Petitbo in Barcelona. I read on a blog that it's a really good brunch place. Happily, it was full so I went across the street to this nice and cozy place called Cafe Búho. I got a coffee, did some reading and writing. It was perfect. When I got up and said I'd like to pay I've got this reply: "That's good!" Or something like that. For a moment I felt offended. It sounded as if the waiter was saying: "Oh, finally you're leaving!" So I asked: "Why?" He smiled: "It's great when people pay before they leave."
 
