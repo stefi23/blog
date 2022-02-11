@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import NavLink from "../components/navLink"
 // import "../components/layout.css"
 
-export default props => {
+const BlogPost = props => {
   const { data, pageContext } = props
   if (!data) {
     return (
@@ -148,3 +148,5 @@ export const query = graphql`
     }
   }
 `
+
+export default BlogPost
