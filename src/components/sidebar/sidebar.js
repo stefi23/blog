@@ -26,9 +26,9 @@ const Sidebar = () => {
         <div className="content-box-main flex-column d-flex">
           <ProfilePicture />
           <br />
-          <h2 className="mb-1 sidebar-innerContent-title" id="center">
+          <h3 className="mb-1 sidebar-innerContent-title" id="center">
             Get in touch!
-          </h2>
+          </h3>
           <ul className="sidebar-innerContent-list mb-0 pb-0">
             <li className="sidebar-innerContent-item">
               <a
@@ -96,7 +96,7 @@ const Sidebar = () => {
           </div>
         </div>
         <div className="content-box-sidebar flex-column d-flex">
-          <h2 className="text-center sidebar-innerContent-title">categories:</h2>
+          <h3 className="text-center sidebar-innerContent-title">categories:</h3>
           <div>
             {result.categoriesGroup.group.map(category => (
               <Link key={category.fieldValue}
@@ -112,7 +112,7 @@ const Sidebar = () => {
         </div>
 
          <div className="content-box-sidebar flex-column d-flex">
-          <h2 className="text-center sidebar-innerContent-title">tags:</h2>
+          <h3 className="text-center sidebar-innerContent-title">tags:</h3>
           <div className="sideBar-tags">
             {result.tagsGroup.group.map(tag => (
                 <Link key={tag.fieldValue} className="sideBar-tags-highlight" to={`/tags/${(tag.fieldValue).toLowerCase()}`}>

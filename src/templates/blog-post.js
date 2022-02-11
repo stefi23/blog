@@ -78,31 +78,30 @@ const BlogPost = props => {
           </p>
 
           <div dangerouslySetInnerHTML={{ __html: postContent }} />
-          <div>
-            <div className="row mt-2">
-              <div className="col-md-12 ">
-                <div className="row p-3">
-                  <div className="col-12 p-0 pr-2 mb-2 d-flex align-items-center justify-content-start">
-                    <h4>More articles:</h4>
-                  </div>
-                  <div className="col-6 p-0 pr-2 d-flex align-items-center justify-content-start">
-                    {previous && (
-                      <NavLink
-                        to={previous?.fields?.slug}
-                        text={`←  ${previous?.frontmatter.title}`}
-                        direction="left"
-                      />
-                    )}
-                  </div>
-                  <div className="col-6 p-0 pl-2 d-flex align-items-center justify-content-end">
-                    {next && (
-                      <NavLink
-                        to={next?.fields?.slug}
-                        text={`${next?.frontmatter.title} →`}
-                        direction="right"
-                      />
-                    )}
-                  </div>
+
+          <div className="row mt-2">
+            <div className="col-md-12 ">
+              <div className="row p-3">
+                <div className="col-12 p-0 pr-2 mb-2 d-flex align-items-center justify-content-start">
+                  <h3 className="post-footer-title">More articles:</h3>
+                </div>
+                <div className="col-6 p-0 pr-2 d-flex align-items-center justify-content-start">
+                  {previous && (
+                    <NavLink
+                      to={previous?.fields?.slug}
+                      text={`←  ${previous?.frontmatter.title}`}
+                      direction="left"
+                    />
+                  )}
+                </div>
+                <div className="col-6 p-0 pl-2 d-flex align-items-center justify-content-end">
+                  {next && (
+                    <NavLink
+                      to={next?.fields?.slug}
+                      text={`${next?.frontmatter.title} →`}
+                      direction="right"
+                    />
+                  )}
                 </div>
               </div>
             </div>

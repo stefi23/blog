@@ -9,6 +9,11 @@ const IndexPage = ({ data, pageContext }) => {
   return (
     <Layout>
       <SEO title="Home" canonical="" />
+       <h1 style={{
+        visibility: "hidden",
+        fontSize: "0px",
+        margin: "0px"
+        }}>Stefi's Travel Blog</h1>
 
       {data.allMarkdownRemark.edges.map(({ node }) => {
         return (
@@ -16,9 +21,9 @@ const IndexPage = ({ data, pageContext }) => {
             <div className="article-card row">
               <div className="col">
                 <Link to={node.fields.slug}>
-                  <h1 className="post-innerContent-title-main">
+                  <h2 className="post-innerContent-title-main">
                     {node.frontmatter.title}
-                  </h1>
+                  </h2>
                 </Link>
                 <span className="post-innerContent-info">
                   {`${node.frontmatter.date} • ${node.timeToRead} min read`} •{" "}

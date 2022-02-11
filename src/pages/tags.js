@@ -1,5 +1,4 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 import { Link, graphql } from "gatsby"
 
@@ -16,41 +15,49 @@ const TagsPage = ({
     },
   },
 }) => {
-
-return  (
-  <div>
-    <Helmet title="Tags" />
-    <Layout>
-      <SEO title="Tags" canonical="/tags"/>
-      <div className="tags-innerContent">
-        <div className="article-card row">
-          <div className="col">
-            <h1 className='tags-innerContent-title'>Tags</h1>
-            <ul>
-              {group.map(tag =>  {
-              const {fieldValue, totalCount } = tag
-              return (
-                <li className="tags-innerContent-item" key={fieldValue}>
-                  <Link
-                    to={`/tags/${kebabCase(fieldValue)}/`}
-                    className="tags-innerContent-item-link"
-                  >
-                    {fieldValue} ({totalCount})
-                  </Link>
-                </li>
-              )})}
-            </ul>
-            <Link to="/">
-              <button className="primaryButton" href="">
-                Go Back to Home page
-              </button>
-            </Link>
+  return (
+    <div>
+      <Layout>
+        <SEO title="Tags" canonical="/tags" />
+        <h1
+          style={{
+            visibility: "hidden",
+            fontSize: "0px",
+            margin: "0px",
+          }}
+        >
+          Stefi's Travel Blog
+        </h1>
+        <div className="tags-innerContent">
+          <div className="article-card row">
+            <div className="col">
+              <h2 className="tags-innerContent-title">Tags</h2>
+              <ul>
+                {group.map(tag => {
+                  const { fieldValue, totalCount } = tag
+                  return (
+                    <li className="tags-innerContent-item" key={fieldValue}>
+                      <Link
+                        to={`/tags/${kebabCase(fieldValue)}/`}
+                        className="tags-innerContent-item-link"
+                      >
+                        {fieldValue} ({totalCount})
+                      </Link>
+                    </li>
+                  )
+                })}
+              </ul>
+              <Link to="/">
+                <button className="primaryButton" href="">
+                  Go Back to Home page
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
-    </Layout>
-  </div>
-)
+      </Layout>
+    </div>
+  )
 }
 
 TagsPage.propTypes = {

@@ -967,3 +967,9 @@ a:focus {
 .paddingTop {
   padding-top: 0;
 }
+
+.post-footer-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
