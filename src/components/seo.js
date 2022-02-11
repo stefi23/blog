@@ -20,15 +20,18 @@ function SEO({ description, lang, meta, title, image, canonical }) {
             description
             author
             image
+            twitter
           }
         }
       }
     `
   )
 
+
+
   const metaTitle = title || site.siteMetadata.title
   const metaDescription = description || site.siteMetadata.description
-  const metaImage = image || site.siteMetadata.image
+  const metaImage =  image  || site.siteMetadata.image
 
   const siteURL = `https://stefi.xyz`
 
@@ -60,7 +63,7 @@ function SEO({ description, lang, meta, title, image, canonical }) {
         },
         {
           property: `og:image`,
-          content: metaImage,
+          content: `${siteURL}${metaImage}`,
         },
         {
           property: `og:url`,
@@ -84,7 +87,11 @@ function SEO({ description, lang, meta, title, image, canonical }) {
         },
         {
           name: `twitter:image`,
-          content: metaImage,
+          content: `${siteURL}${metaImage}`,
+        },
+            {
+          name: `twitter:site`,
+          content: site.siteMetadata.twitter,
         },
       ].concat(meta)}
     >

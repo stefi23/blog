@@ -3,7 +3,8 @@ module.exports = {
     title: `Stefi's Shorts`,
     description: `Personal blog about travel, life in Barcelona and much more`,
     author: `Stefi Rosca`,
-    image: "src/images/banner.jpg",
+    image: "/static/0feebc4873fc9cac64f7e74ae2bfa064/0e329/banner.jpg",
+    twitter: "@stefania_rosca"
   },
 
   plugins: [
