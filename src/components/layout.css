@@ -366,8 +366,9 @@ h4 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1rem;
+  font-size: 1rem !important;
   line-height: 1.1;
+  color: var(--primary-color) !important;
 }
 h5 {
   margin-left: 0;
@@ -934,25 +935,17 @@ a:focus {
 }
 
 .navigationButton,
+.navigationLink:link,
+.navigationLink:visited,
 .navigationButton:link,
 .navigationButton:visited {
   color: var(--primary-color);
 }
 
-.navigationButton:hover {
+.navigationButton:hover,
+.navigationLink:hover {
   color: var(--secondary-color) !important;
   text-decoration: none;
-  transition: transform 0.5s linear;
-}
-
-.navigationButton-right:hover {
-  transform: translateX(10px);
-  transition: transform 0.5s linear;
-}
-
-.navigationButton-left:hover {
-  transform: translateX(-10px);
-  transition: transform 0.5s linear;
 }
 
 .sidebarCategory-link {

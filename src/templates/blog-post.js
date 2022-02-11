@@ -2,11 +2,12 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "../components/layout.css"
+import NavLink from "../components/navLink"
+// import "../components/layout.css"
 
 export default props => {
-  console.log(props) //to correct to data
-  if (!props) {
+  const { data, pageContext } = props
+  if (!data) {
     return (
       <Layout>
         <div className="post-innerContent">
@@ -22,7 +23,6 @@ export default props => {
     )
   }
 
-  const { data, pageContext } = props
   const { next, previous } = pageContext
 
   const { markdownRemark } = data
@@ -79,30 +79,28 @@ export default props => {
 
           <div dangerouslySetInnerHTML={{ __html: postContent }} />
           <div>
-            <div
-              className="row mt-2 nav-innerContent"
-              style={{ borderRadius: "4px" }}
-            >
+            <div className="row mt-2">
               <div className="col-md-12 ">
-                <div className="row">
-                  <div className="col-6 p-2 d-flex align-items-center justify-content-start pl-3">
+                <div className="row p-3">
+                  <div className="col-12 p-0 pr-2 mb-2 d-flex align-items-center justify-content-start">
+                    <h4>More articles:</h4>
+                  </div>
+                  <div className="col-6 p-0 pr-2 d-flex align-items-center justify-content-start">
                     {previous && (
-                      <Link
+                      <NavLink
                         to={previous?.fields?.slug}
-                        className={`p-1 navigationButton navigationButton-left`}
-                      >
-                        ← {previous?.frontmatter.title}
-                      </Link>
+                        text={`←  ${previous?.frontmatter.title}`}
+                        direction="left"
+                      />
                     )}
                   </div>
-                  <div className="col-6 p-2 d-flex align-items-center justify-content-end pr-3">
+                  <div className="col-6 p-0 pl-2 d-flex align-items-center justify-content-end">
                     {next && (
-                      <Link
+                      <NavLink
                         to={next?.fields?.slug}
-                        className={`p-1 navigationButton navigationButton-right`}
-                      >
-                        {next?.frontmatter.title} →
-                      </Link>
+                        text={`${next?.frontmatter.title} →`}
+                        direction="right"
+                      />
                     )}
                   </div>
                 </div>
