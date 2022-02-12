@@ -11,58 +11,68 @@ const Categories = ({ pageContext, data }) => {
   return (
     <Layout>
       <SEO title={category} canonical={`/category/${category}`} />
-        <div className="row categories-innerContent">
-          <div className="col-md-12 navigation-card">
-            <div className="row">
-              <div className="mb-0">
-                <p className="mb-0 categories-innerContent-info">
-                  {`Articles from category `} 
-                  <span className='categories-innerContent-info-highlight'>
-                    {category}:
-                  </span>
-                </p>
-              </div>
+      <div className="row categories-innerContent">
+        <div className="col-md-12 navigation-card">
+          <div className="row">
+            <div className="mb-0">
+              <p className="mb-0 categories-innerContent-info">
+                {`Articles from category `}
+                <span className="categories-innerContent-info-highlight">
+                  {category}:
+                </span>
+              </p>
             </div>
           </div>
         </div>
-        {articles.map(article => {
+      </div>
+      {articles.map(article => {
+        const { node } = article
+        const { id, fields, frontmatter, excerpt, timeToRead } = node
+        const { slug } = fields
+        const { title, date, tags } = frontmatter
 
-          const { node } = article
-          const { id, fields, frontmatter, excerpt, timeToRead } = node
-          const { slug } = fields
-          const { title, date, tags } = frontmatter
-
-          return (
-            
+        return (
           <div className="post-innerContent">
             <div className="article-card row">
               <div className="col" key={id}>
                 <Link to={slug}>
                   <h1 className="post-innerContent-title-main">{title}</h1>
                 </Link>
-                 <span className="post-innerContent-info">
-                 {`${date} •
-                  ${timeToRead} min read`} • <Link className="post-innerContent-info-link" to={`/category/${(category).toLowerCase()}`}>category: {category}</Link> 
+                <span className="post-innerContent-info">
+                  {`${date} •
+                  ${timeToRead} min read`}{" "}
+                  •{" "}
+                  <Link
+                    className="post-innerContent-info-link"
+                    to={`/category/${category.toLowerCase()}`}
+                  >
+                    category: {category}
+                  </Link>
                 </span>
                 <p>
-                    {tags.map(tag => 
-                      <Link to={`/tags/${(tag).toLowerCase()}/`} className='post-innerContent-info-highlight' key={tag}>{tag}</Link>
-                      )
-                    }
+                  {tags.map(tag => (
+                    <Link
+                      to={`/tags/${tag.toLowerCase()}/`}
+                      className="post-innerContent-info-highlight"
+                      key={tag}
+                    >
+                      {tag}
+                    </Link>
+                  ))}
                 </p>
                 <p className="post-innerContent-content">{excerpt}</p>
                 <div className="col">
-                   <Link to={slug}>
+                  <Link to={slug}>
                     <button className="primaryButton primaryButton-right">
                       Continue Reading
                     </button>
-                </Link>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
-        )})}
-
+        )
+      })}
     </Layout>
   )
 }
