@@ -4,7 +4,7 @@ module.exports = {
     description: `Personal blog about travel, life in Barcelona and much more`,
     author: `Stefi Rosca`,
     image: "/static/0feebc4873fc9cac64f7e74ae2bfa064/0e329/banner.jpg",
-    twitter: "@stefania_rosca"
+    twitter: "@stefania_rosca",
   },
 
   plugins: [
@@ -47,6 +47,15 @@ module.exports = {
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-plugin-social9-socialshare",
+      options: {
+        content: "626fa16b98164446b87e23e1c8ba3f90",
+        async: true,
+        defer: true,
+      },
+    },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
