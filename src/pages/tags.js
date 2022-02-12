@@ -19,15 +19,7 @@ const TagsPage = ({
     <div>
       <Layout>
         <SEO title="Tags" canonical="/tags" />
-        <h1
-          style={{
-            visibility: "hidden",
-            fontSize: "0px",
-            margin: "0px",
-          }}
-        >
-          Stefi's Travel Blog
-        </h1>
+        <h1 className="blogTitle-hidden">Stefi's Travel Blog</h1>
         <div className="tags-innerContent">
           <div className="article-card row">
             <div className="col">

@@ -9,12 +9,7 @@ const IndexPage = ({ data, pageContext }) => {
   return (
     <Layout>
       <SEO title="Home" canonical="" />
-       <h1 style={{
-        visibility: "hidden",
-        fontSize: "0px",
-        margin: "0px"
-        }}>Stefi's Travel Blog</h1>
-
+      <h1 className="blogTitle-hidden">Stefi's Travel Blog</h1>
       {data.allMarkdownRemark.edges.map(({ node }) => {
         return (
           <div className="post-innerContent" key={node.id}>

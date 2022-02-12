@@ -21,15 +21,7 @@ const About = () => {
   return (
     <Layout>
       <SEO title="About" canonical="/about" />
-      <h1
-        style={{
-          visibility: "hidden",
-          fontSize: "0px",
-          margin: "0px",
-        }}
-      >
-        Stefi's Travel Blog
-      </h1>
+      <h1 className="blogTitle-hidden">Stefi's Travel Blog</h1>
       <div className="about-innerContent">
         <div className="article-card row">
           <div className="col">
