@@ -979,3 +979,7 @@ a:focus {
   font-size: 0px !important;
   margin: 0;
 }
+
+.s9-share-inline > a:hover {
+  background-color: #8f3774 !important;
+}
