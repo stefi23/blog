@@ -9,7 +9,7 @@ description: "I'm finally starting my very own blog. My plan is to write about m
 
 Dear friends, family and everyone in between,
 
-I'm finally starting my very own blog. When I was younger I had a blog hosted on blogspot and it always annoyed me that I cannot customize it as much as I wanted. After learning to code and about static website generators like Gatsby I decided to give this a shot and create my blog without a CMS and instead use markdown files. Gatsby is super cool and I am excited to start sharing more content soon.
+I'm finally starting my very own blog. When I was younger I had a blog hosted on Blogspot and it always annoyed me that I cannot customize it as much as I wanted. After learning to code and about static website generators like Gatsby I decided to give this a shot and create my blog without a CMS and instead use markdown files. Gatsby is super cool and I am excited to start sharing more content soon.
 
 Now that we are live the challenge will be to actually write :)
 
@@ -19,9 +19,9 @@ This blog will be about:
 - Barcelona (the city I live in at the moment);
 - Stefi's shorts (which will be post about stuff that I am thinking about, learning or reflecting on);
 - Video (my very own YouTube videos shared here plus other videos I enjoy watching - mainly YouTube videos);
-- Recommendations (Books, Podcasts, Movies anything I find usefull and I want to recommend);
+- Recommendations (Books, Podcasts, Movies anything I find useful and I want to recommend);
 - Quotes That Make Me Think;
-- Maybe some articles code related.
+- Maybe some articles code related. -> update: I've created a separate blog for this
 
 Hope you will enjoy it!
 

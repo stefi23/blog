@@ -19,6 +19,8 @@ Enjoy!
 <br/>
 <br/>
 
+## Barcelona recommendations map
+
 <div class="embed-responsive embed-responsive-4by3">
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1_AbMYdBiQDeHYSW9ipuHl0lMhoClA0F0&ehbc=2E312F&zoom=5&ll=41.39877391979456%2C2.1685822227257257&z=13" width="640" height="480"></iframe>
 </div>
