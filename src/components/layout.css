@@ -981,8 +981,10 @@ a:focus {
   margin: 0;
 }
 
-#s9-share-inline .s9-btn-share .s9-icon-wrap svg:hover {
-  fill: #8f3774 !important;
+@media (hover: hover) {
+  #s9-share-inline .s9-btn-share .s9-icon-wrap svg:hover {
+    fill: #8f3774 !important;
+  }
 }
 
 #s9-share-inline .s9-btn-share.s9-facebook {
