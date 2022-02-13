@@ -972,6 +972,7 @@ a:focus {
   font-size: 1.25rem;
   font-weight: 700;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .blogTitle-hidden {
@@ -980,6 +981,10 @@ a:focus {
   margin: 0;
 }
 
-.s9-share-inline > a:hover {
-  background-color: #8f3774 !important;
+#s9-share-inline .s9-btn-share .s9-icon-wrap svg:hover {
+  fill: #8f3774 !important;
+}
+
+#s9-share-inline .s9-btn-share.s9-facebook {
+  padding-left: 0;
 }
