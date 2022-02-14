@@ -1,41 +1,34 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const NavBtn = ({ label, to = "#", isDisabled = false, direction }) => {
-  if (isDisabled) {
-    return <p></p>
-  }
+const Navigation = ({ currentPage, totalPages }) => {
+  const prefix = "/page"
+  const isOnFirstPage = currentPage === 1 || currentPage === undefined
+  const isOnLastPage = currentPage === totalPages
 
-  return (
-    <Link
-      to={to}
-      className={`p-1 navigationButton navigationButton-${direction}`}
-    >
-      {label}
-    </Link>
-  )
-}
-
-const Navigation = ({ prefix = "/page", currentPage, totalPages }) => {
   return (
     <div className="row mt-2 nav-innerContent" style={{ borderRadius: "4px" }}>
       <div className="col-md-12 navigation-card">
         <div className="row">
           <div className="col-6 p-2 d-flex align-items-center justify-content-start pl-3">
-            <NavBtn
-              to={currentPage === 2 ? `/` : `${prefix}/${currentPage - 1}`}
-              label={`← Previous page: ${currentPage - 1}`}
-              isDisabled={currentPage === 1 || currentPage === undefined}
-              direction="left"
-            />
+            {!isOnFirstPage && (
+              <Link
+                to={currentPage === 2 ? `/` : `${prefix}/${currentPage - 1}`}
+                className="p-1 navigationButton"
+              >
+                {`← Previous page: ${currentPage - 1}`}
+              </Link>
+            )}
           </div>
           <div className="col-6 p-2 d-flex align-items-center justify-content-end pr-3">
-            <NavBtn
-              isDisabled={currentPage === totalPages}
-              to={`${prefix}/${currentPage + 1}`}
-              label={`Next page: ${currentPage + 1} →`}
-              direction="right"
-            />
+            {!isOnLastPage && (
+              <Link
+                to={`${prefix}/${currentPage + 1}`}
+                className="p-1 navigationButton"
+              >
+                {`Next page: ${currentPage + 1} →`}
+              </Link>
+            )}
           </div>
         </div>
       </div>
