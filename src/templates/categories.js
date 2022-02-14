@@ -11,6 +11,7 @@ const Categories = ({ pageContext, data }) => {
   return (
     <Layout>
       <SEO title={category} canonical={`/category/${category}`} />
+      <h1 className="blogTitle-hidden">Stefi's Travel Blog</h1>
       <div className="row categories-innerContent">
         <div className="col-md-12 navigation-card">
           <div className="row">
@@ -36,7 +37,7 @@ const Categories = ({ pageContext, data }) => {
             <div className="article-card row">
               <div className="col" key={id}>
                 <Link to={slug}>
-                  <h1 className="post-innerContent-title-main">{title}</h1>
+                  <h2 className="post-innerContent-title-main">{title}</h2>
                 </Link>
                 <span className="post-innerContent-info">
                   {`${date} •
