@@ -11,20 +11,20 @@ description: "Discover Lyon's secret passageways known as traboules located in t
 
 A few months ago I went on a solo weekend trip to Lyon. I booked a flight and a hotel and with no actual plan was ready for an adventure.
 
-With half-day left after having walked around the top sightseeing spots, I decided to go up to the La _Croix_-Rousse neighborhood. At the tourist information desk, I've had someone mark some of the passageways around that neighborhood without really giving further information. I kinda ignored them and just wanted to go up to the hill and see the view.
+With half-day left after having walked around the top sightseeing spots, I decided to go up to the La _Croix_-Rousse neighborhood. At the tourist information desk, I've had someone mark some of the passageways around that neighborhood without really giving further information. I ignored these as I just wanted to go up the hill to see the view.
 
 ![lyon-passageway-map](./lyon-passageway-map.jpg)
 
-On my way back down I spotted a sign on a building entrance that looked just very similar to the signs of the Camino de Santiago.
+On my way back down I spotted a sign on a building entrance that looked very similar to the signs of the Camino de Santiago.
 
 ![Lyon Symbol](./lyon-symbol.jpg)
 
-I peeked inside and saw this tall old gray abandoned apartment building and some stairs leading down. In this concrete interior building yard, I spotted a couple more tourists wandering around. They were looking at a sign and I went down to have a look too. I don't really remember what it said, I think it was in French. I got super curious to see what could be found at the lower level.
+I peeked inside and saw this tall old gray abandoned apartment building and some stairs leading down. In this concrete interior building yard, I spotted a couple more tourists wandering around. They were looking at a sign and I went down to have a look too. I don't really remember what it said, I think it was in French. My curiosity took me to the lower level.
 
 ![Famous traboule on Croix-Rousse](./first-passage.jpg)
 Image: Famous traboule on Croix-Rousse hill: the “Cour des Voraces”
 
-Downstairs it was dark and empty. In a way it reminded me of Bucharest and although I felt scared I continued walking down. I ended up at the interior entrance of another building where I saw a lot of sprayed post boxes. I wasn't sure if I should be here and wanted to leave fast. Going all the way back up felt too tiring so I decided to walk outside. I looked on my right and saw some people at a window up and decided to quickly walk the other way. Luckily it didn't take long and I reached again the street.
+Here it was both dark and gray. In a way it reminded me of Bucharest and although I felt scared I continued walking down. I ended up at the interior entrance of another building where I saw a lot of sprayed post boxes. I wasn't sure if I should be here and wanted to leave fast but going all the way back up felt too tiring so I decided to continue the walk through the building out. I looked on my right and saw some people at a window up and decided to quickly walk the other way. Luckily it didn't take long and I was on street.
 
 ![colorful post-boxes](./post-boxes.png)
 
