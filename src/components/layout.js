@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <MyNavbar />
       <section className="row mt-2">
-        <main className="col-md-8">{children}</main>
+        <main className="col-md-8 mainContent">{children}</main>
         <aside className="col-md-4">
           <Sidebar />
         </aside>

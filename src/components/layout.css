@@ -681,7 +681,26 @@ pre tt:after {
   content: "";
 }
 
+.header {
+  margin-top: 20px;
+}
+
 @media only screen and (max-width: 480px) {
+  .menu,
+  .banner,
+  .mainContent,
+  .post-innerContent,
+  .nav-innerContent,
+  .about-innerContent,
+  .tags-innerContent,
+  .categories-innerContent {
+    padding: 0 !important;
+  }
+
+  .header {
+    margin-top: 0;
+  }
+
   html {
     font-size: 100%;
   }

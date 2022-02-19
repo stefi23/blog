@@ -5,11 +5,11 @@ import Banner from "./banner"
 
 const Header = () => (
   <header>
-    <div className="row" style={{ marginTop: "20px" }}>
-      <div className="col-md-12">
+    <div className="row">
+      <div className="col-md-12 banner">
         <div className="header">
-        <Link to="/">
-          <Banner />
+          <Link to="/">
+            <Banner />
           </Link>
         </div>
       </div>

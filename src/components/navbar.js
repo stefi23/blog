@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 const MyNavbar = () => (
   <nav>
     <div className="row">
-      <div className="col-md-12 mt-3">
+      <div className="col-md-12 mt-3 menu">
         <div className="navBar rounded">
           <Link to="/" className="navLink">
             Home
