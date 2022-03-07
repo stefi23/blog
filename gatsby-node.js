@@ -96,7 +96,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   Array.from({ length: numPages }).forEach((_, i) => {
     actions.createPage({
       path: i === 0 ? "/" : `/page/${i + 1}`,
-      component: path.resolve("./src/pages/index.js"),
+      component: path.resolve("./src/templates/blog-list.js"),
       context: {
         BlogLimit: postPerPage,
         BlogSkip: i * postPerPage,

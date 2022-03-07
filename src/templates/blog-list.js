@@ -7,6 +7,7 @@ import Navigation from "../components/navigation"
 
 const IndexPage = ({ data, pageContext }) => {
   const { BlogCurrentPage, BlogNumPages } = pageContext
+
   return (
     <Layout>
       <SEO title="Home" canonical="" />
