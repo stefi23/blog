@@ -27,11 +27,9 @@ function SEO({ description, lang, meta, title, image, canonical }) {
     `
   )
 
-
-
   const metaTitle = title || site.siteMetadata.title
   const metaDescription = description || site.siteMetadata.description
-  const metaImage =  image  || site.siteMetadata.image
+  const metaImage = image || site.siteMetadata.image
 
   const siteURL = `https://stefi.xyz`
 
@@ -89,7 +87,7 @@ function SEO({ description, lang, meta, title, image, canonical }) {
           name: `twitter:image`,
           content: `${siteURL}${metaImage}`,
         },
-            {
+        {
           name: `twitter:site`,
           content: site.siteMetadata.twitter,
         },
@@ -103,12 +101,6 @@ function SEO({ description, lang, meta, title, image, canonical }) {
         rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous"
-      />
-      <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous"
       />
       <link rel="canonical" href={metaCanonical} />

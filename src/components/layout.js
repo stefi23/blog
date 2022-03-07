@@ -14,8 +14,6 @@ import MyNavbar from "./navbar"
 import Footer from "./footer"
 import Sidebar from "./sidebar/sidebar"
 
-import "bootstrap/dist/css/bootstrap.min.css"
-
 import "./layout.css"
 
 const Layout = ({ children }) => {

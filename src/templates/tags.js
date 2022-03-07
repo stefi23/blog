@@ -6,7 +6,6 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
@@ -17,30 +16,33 @@ const Tags = ({ pageContext, data }) => {
   return (
     <div>
       <Layout>
-        <SEO title={tagHeader} canonical={`/tags/${tag}`}/>
-
+        <SEO title={tagHeader} canonical={`/tags/${tag}`} />
+        <h1 className="blogTitle-hidden">Stefi's Travel Blog</h1>
         <div className="tags-innerContent">
           <div className="article-card row">
             <div className="col">
-              <h1 className="mb-3 tags-innerContent-title">{tagHeader}</h1>
+              <h2 className="mb-3 tags-innerContent-title">{tagHeader}</h2>
               <div className="p-3">
                 <ul>
                   {edges.map(({ node }) => {
-                    const {fields, frontmatter } = node
-                    const {slug} = fields
-                    const {title} = frontmatter
+                    const { fields, frontmatter } = node
+                    const { slug } = fields
+                    const { title } = frontmatter
                     return (
                       <li className="tags-innerContent-item" key={slug}>
-                        <Link className="tags-innerContent-item-link" to={slug}>{title}</Link>
+                        <Link className="tags-innerContent-item-link" to={slug}>
+                          {title}
+                        </Link>
                       </li>
                     )
                   })}
                 </ul>
               </div>
-                <Link to="/tags">
-                  <button className="primaryButton" href="">
-                    Go back to all tags
-                  </button></Link>
+              <Link to="/tags">
+                <button className="primaryButton" href="">
+                  Go back to all tags
+                </button>
+              </Link>
             </div>
           </div>
         </div>

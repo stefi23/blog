@@ -15,7 +15,7 @@ Now that we are live the challenge will be to actually write :)
 
 This blog will be about:
 
-- Travel (hopefully soon we will be able to travel again as right now the furtherst I've been in a month is to Mercadona, the supermarket 650m away from my house);
+- Travel (hopefully soon we will be able to travel again as right now the furthest I've been in a month is to Mercadona, the supermarket 650m away from my house);
 - Barcelona (the city I live in at the moment);
 - Stefi's shorts (which will be post about stuff that I am thinking about, learning or reflecting on);
 - Video (my very own YouTube videos shared here plus other videos I enjoy watching - mainly YouTube videos);
