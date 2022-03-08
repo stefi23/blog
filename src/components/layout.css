@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Do+Hyeon|Gaegu:400,700|Gamja+Flower|Nanum+Gothic: 400,700|Indie+Flower|Roboto|Open+Sans:300,400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Do+Hyeon|Gaegu:400,700|Gamja+Flower|Nanum+Gothic: 400,700|Indie+Flower|Roboto|Open+Sans:300,400,600,700&&family=Merriweather:wght@400;700&display=swap");
 
 :root {
   --primary-color: #581845;
@@ -89,6 +89,8 @@ dfn {
   line-height: 35px;
   margin: 0.67em 0;
   margin-top: 0;
+}
+.sidebar-innerContent-title {
   text-align: center;
 }
 
@@ -104,6 +106,10 @@ dfn {
   font-size: 12px;
 }
 
+.post-innerContent-info-tags {
+  margin-bottom: 0;
+}
+
 .post-innerContent-info-link {
   color: var(--primary-color);
   text-decoration: underline !important;
@@ -113,9 +119,7 @@ dfn {
   color: var(--secondary-color);
 }
 
-.post-innerContent-content,
-.post-innerContent-readMore {
-  color: var(--primary-color);
+.post-innerContent-content {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   margin: 1rem 0;
@@ -140,6 +144,7 @@ dfn {
 .sideBar-tags-highlight {
   background: var(--highlight-color);
   color: var(--primary-color);
+  display: inline-block;
   margin-right: 8px;
   padding: 2px 8px;
 }
@@ -691,8 +696,7 @@ pre tt:after {
     padding: 12px !important;
   }
 
-  .post-innerContent-content,
-  .post-innerContent-readMore {
+  .post-innerContent-content {
     font-size: 16px;
   }
 
@@ -824,6 +828,16 @@ a:focus {
   text-align: center;
 }
 
+.footer-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
 .content-box-main {
   margin: 10px 0px;
   padding: 40px 40px;
@@ -888,6 +902,7 @@ a:focus {
   border-radius: 4.5px;
   border: none;
   color: white;
+  cursor: pointer;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   margin-top: 18px;
