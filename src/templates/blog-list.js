@@ -5,6 +5,8 @@ import { Link, graphql } from "gatsby"
 import Navigation from "../components/navigation"
 
 const IndexPage = ({ data, pageContext }) => {
+  const { BlogCurrentPage, BlogNumPages } = pageContext
+
   return (
     <Layout>
       <SEO title="Home" canonical="" />
@@ -52,11 +54,8 @@ const IndexPage = ({ data, pageContext }) => {
           </div>
         )
       })}
-      {pageContext && (
-        <Navigation
-          currentPage={pageContext.BlogCurrentPage}
-          totalPages={pageContext.BlogNumPages}
-        />
+      {BlogCurrentPage && BlogNumPages && (
+        <Navigation currentPage={BlogCurrentPage} totalPages={BlogNumPages} />
       )}
     </Layout>
   )
