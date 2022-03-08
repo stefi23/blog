@@ -30,7 +30,7 @@ const IndexPage = ({ data, pageContext }) => {
                     category: {node.frontmatter.categories}
                   </Link>
                 </span>
-                <p>
+                <p className="post-innerContent-info-tags">
                   {node.frontmatter.tags.map(tag => (
                     <Link
                       to={`/tags/${tag.toLowerCase()}/`}
