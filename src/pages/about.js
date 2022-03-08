@@ -50,6 +50,7 @@ const About = () => {
               <a
                 href="https://youtube.com/playlist?list=PLXYEaUHc07uZwOT63py0RTY8CKHOYnMaG"
                 target="_blank"
+                className="articleLink"
               >
                 YouTube.
               </a>
