@@ -146,6 +146,7 @@ dfn {
   color: var(--primary-color);
   display: inline-block;
   margin-right: 8px;
+  margin-bottom: 8px;
   padding: 2px 8px;
 }
 
