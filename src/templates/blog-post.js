@@ -48,7 +48,7 @@ const BlogPost = props => {
       <SEO
         title={title}
         description={description || excerpt}
-        image={featuredImage.childImageSharp.sizes.src}
+        image={featuredImage?.childImageSharp?.sizes?.src}
         canonical={slug}
       />
       <article className="article-card">
