@@ -31,7 +31,7 @@ function SEO({ description, lang, meta, title, image, canonical }) {
   const metaDescription = description || site.siteMetadata.description
   const metaImage = image || site.siteMetadata.image
 
-  const siteURL = `https://stefi.xyz`
+  const siteURL = `https://stefitravels.xyz`
 
   const metaCanonical = `${siteURL}${canonical}`
 
