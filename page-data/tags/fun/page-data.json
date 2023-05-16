@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-templates-tags-js",
     "path": "/tags/fun/",
     "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/on-trust/"},"frontmatter":{"title":"On Trust"}}}]}},"pageContext":{"tag":"fun"}},
-    "staticQueryHashes": ["32046230","3575884307","3649515864","3861544978","565753328"]}
+    "staticQueryHashes": ["1032981581","3575884307","3649515864","3861544978","565753328"]}
