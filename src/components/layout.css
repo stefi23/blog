@@ -782,15 +782,20 @@ pre tt:after {
   }
 }
 
+a,
 .articleLink {
   color: var(--primary-color);
   text-decoration: underline;
 }
 
 .articleLink:hover {
-  background: var(--secondary-color);
+  background: var(--secondary-color) !important;
   color: var(--highlight-color);
   text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-color);
 }
 
 .tags-innerContent-item-link:link {

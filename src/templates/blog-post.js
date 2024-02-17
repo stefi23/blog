@@ -84,12 +84,6 @@ const BlogPost = props => {
             <div className="row mt-2">
               <div className="col-md-12 ">
                 <div className="row p-3">
-                  <div className="col-12 p-0">
-                    <h3 className="post-footer-title">Share article:</h3>
-                    <div class="s9-widget-wrapper"></div>
-                  </div>
-                </div>
-                <div className="row p-3">
                   <div className="col-12 p-0 pr-2 mb-2 d-flex align-items-center justify-content-start">
                     <h3 className="post-footer-title">More articles:</h3>
                   </div>
