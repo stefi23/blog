@@ -11,9 +11,10 @@ If you've ever wandered the streets of Barcelona, chances are you've encountered
 
 ![panot medals](./panot-medals-barcelona.png)
 
-It has become an iconic image that is everywhere, but most importantly on the streets of Barcelona. Do you know how it came to be and the history of **Can Fanga,** the house of mud?
+It has become an iconic image that is everywhere, but most importantly on the streets of Barcelona. Do you know how it came to be and **<u>the history of Can Fanga, the house of mud</u>**?
 
 ![panot of Barcelona - flower symbol](./panot-flower-Barcelona.png)
+<br />
 
 ## Uncovering the Origin Story
 
@@ -32,6 +33,8 @@ Up until the early 20th century, homeowners in Barcelona were responsible for pa
 <img alt="image Barcelona 19th century Sagrada Familia" draggable="true" src="https://historiesdebcn.com/wp-content/uploads/2023/01/granvia.jpg" class="css-9pa8cd" ></img>
 [Image source](https://historiesdebcn.com/can-fanga-quan-barcelona-era-la-ciutat-del-fang/)
 
+<br />
+
 ## From Mud to Masterpiece
 
 Luckily the local government stepped in and approved to standardize the sidewalks and so the paving project started. <a href="https://www.escofet.com/en" target="_blank" class="articleLink">Casa Escofet</a>, an architectural firm, won a competition to design the panot, which became a defining feature of Barcelona's streets.
@@ -45,11 +48,11 @@ Luckily the local government stepped in and approved to standardize the sidewalk
 While the panot's origins are well-documented, the identity of its designer remains a mystery. Casa Escofet presented five designs to the Eixample Commission,
 and won the project. They started paving the streets of Barcelona with the design of the panot, becoming one of the most emblematic symbols of the city.
 
-Some speculate that renowned Catalan architect Josep Puig i Cadafalch played a role, drawing inspiration from the almond flower motif of his iconic Casa Amatller. However, conclusive evidence remains elusive, adding to the panot's enigmatic allure.
+**Some speculate that renowned Catalan architect Josep Puig i Cadafalch played a role**, drawing inspiration from the almond flower motif of his iconic Casa Amatller. However, conclusive evidence remains elusive, adding to the panot's enigmatic allure.
 
 TODO!! -> Add image Casa Amettler + Almond Flower
 
-If you are curious to know the panots are made out of cement, sand and water and measure 20x20 cm. These *panot* tiles cover around five million square meters of pavement in Barcelona.
+If you are curious to know the panots are made out of cement, sand and water and measure 20x20 cm. These **panot** tiles cover around five million square meters of pavement in Barcelona.
 
 ![various panots models from Barcelona](./various-panots-models-barcelona.png)
 
