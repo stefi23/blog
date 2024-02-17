@@ -784,13 +784,13 @@ pre tt:after {
 
 a,
 .articleLink {
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
   text-decoration: underline;
 }
 
 .articleLink:hover {
   background: var(--secondary-color) !important;
-  color: var(--highlight-color);
+  color: var(--highlight-color) !important;
   text-decoration: none;
 }
 
