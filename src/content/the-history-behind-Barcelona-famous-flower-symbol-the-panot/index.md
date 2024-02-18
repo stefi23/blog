@@ -7,7 +7,7 @@ featuredImage: "./panot-flower-Barcelona.png"
 description: "Learn about Barcelona's famous panot tiles - from muddy streets to city symbols. Discover their design secrets and the architects behind them."
 ---
 
-If you've ever wandered the streets of Barcelona, chances are you've encountered the panot – that tile with a flower on it. flower. Due to its popularity, it has started being used in many ways like souvenirs, clothing, logos, medals, jewelry, and some people even get a tattoo of it.
+If you've ever wandered the streets of Barcelona, chances are you've encountered the panot – that tile with a flower on it. Due to its popularity, it has started being used in many ways like souvenirs, clothing, logos, medals, jewelry, and some people even get a tattoo of it.
 
 ![panot medals](./panot-medals-barcelona.png)
 
