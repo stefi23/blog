@@ -47,7 +47,7 @@ Luckily the local government stepped in and approved to standardize the sidewalk
 
 While the panot's origins are well-documented, the identity of its designer remains a mystery. Casa Escofet presented five designs to the Eixample Commission, and won the project. They started paving the streets of Barcelona with the design of the flower panot, becoming one of the most emblematic symbols of the city.
 
-**Some speculate that renowned Catalan architect Josep Puig i Cadafalch played a role** (One of my favorite modernist architects - more on him future on), drawing inspiration from the almond flower motif of his iconic Casa Amatller (Tip: this house is next to Casa Batlo and because it's less popular it's such an enjoyable visit which includes a sample of chocolate.). Amatller was a chocolate owner and the flower was to depict an almond flower as chocolate goes well with almonds. However, there is a lot of debate on it and we will probably never know the truth.
+**Some speculate that renowned Catalan architect Josep Puig i Cadafalch played a role** (One of my favorite modernist architects - more on him future on), drawing inspiration from the 🌸 almond flower motif of his iconic Casa Amatller (Tip: this house is next to Casa Batlo and because it's less popular it's such an enjoyable visit which includes a sample of chocolate.). Amatller was a chocolate owner and the flower was to depict an almond flower as chocolate goes well with almonds. However, there is a lot of debate on it and we will probably never know the truth.
 
 ![Casa Ametller panot](./panot-casa-ametller.png)
 
@@ -61,11 +61,11 @@ Anyone visiting the city will inevitably walk on a panot at some point during t
 
 ## Bonus
 
-**<u>Gaudí’s Panot:</u>** Another emblematic design is Gaudí’s Panot present on the popular Passeig de Gràcia street. His nautical-themed *panot* is decorated with three different marine species: starfish, ammonoid mollusks and seaweed. Originally intended for Casa Batlló's floors, it found its place outside the building due to manufacturing delays.
+**<u>Gaudí’s Panot:</u>** Another emblematic design is Gaudí’s Panot present on the popular Passeig de Gràcia street. His nautical-themed *panot* is decorated with three different 🌊 marine species: starfish, ammonoid mollusks and seaweed. Originally intended for Casa Batlló's floors, it found its place outside the building due to manufacturing delays.
 
 ![panot Gaudi Barcelona](./panot-gaudi-barcelona.png)
 
-**<u>Panots on Diagonal:</u>** On Diagonal street, there's a new panot with banana tree leaf designs. This i
+**<u>Panots on Diagonal:</u>** On Diagonal street, there's a new panot with 🍌 banana tree leaf designs. This i
 
 ![panot Diagonal Barcelona](./panot-Diagona-Barcelona.png)
 
@@ -76,3 +76,5 @@ Anyone visiting the city will inevitably walk on a panot at some point during t
 In general, it is best to look up, but while in Barcelona have a peak on where you’re stepping you might discover other panot styles as I did.
 
 ![new panot style](./new-panot-style.png)
+
+That's all for today! Thanks for reading until the end 👋
