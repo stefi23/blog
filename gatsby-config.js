@@ -69,14 +69,14 @@ module.exports = {
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: "gatsby-plugin-social9-socialshare",
-      options: {
-        content: "626fa16b98164446b87e23e1c8ba3f90",
-        async: true,
-        defer: true,
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-social9-socialshare",
+    //   options: {
+    //     content: "626fa16b98164446b87e23e1c8ba3f90",
+    //     async: true,
+    //     defer: true,
+    //   },
+    // },
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
