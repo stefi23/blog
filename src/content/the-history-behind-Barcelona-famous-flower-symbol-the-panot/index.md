@@ -50,7 +50,7 @@ and won the project. They started paving the streets of Barcelona with the desig
 
 **Some speculate that renowned Catalan architect Josep Puig i Cadafalch played a role**, drawing inspiration from the almond flower motif of his iconic Casa Amatller. However, conclusive evidence remains elusive, adding to the panot's enigmatic allure.
 
-TODO!! -> Add image Casa Amettler + Almond Flower
+![Casa Ametller panot](./panot-casa-ametller.png)
 
 If you are curious to know the panots are made out of cement, sand and water and measure 20x20 cm. These **panot** tiles cover around five million square meters of pavement in Barcelona.
 
