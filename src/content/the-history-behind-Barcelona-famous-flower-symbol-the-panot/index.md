@@ -45,9 +45,11 @@ Luckily the local government stepped in and approved to standardize the sidewalk
 
 ## The Mystery of Design
 
-While the panot's origins are well-documented, the identity of its designer remains a mystery. Casa Escofet presented five designs to the Eixample Commission, and won the project. They started paving the streets of Barcelona with the design of the flower panot, becoming one of the most emblematic symbols of the city.
+While the panot's origins are well-documented, the identity of its designer remains a mystery. Casa Escofet presented five designs to the Eixample Commission, and won the project. They started paving the streets of Barcelona with the design of the flower panot, becoming one of the most emblematic symbol of the city.
 
-**Some speculate that renowned Catalan architect Josep Puig i Cadafalch played a role** (one of my favorite modernist architects - more on him future on), drawing inspiration from the almond flower motif of his iconic build Casa Amatller (Tip: this house is next to Casa Batlló and because it's less popular it's such an enjoyable visit which also includes a sample of chocolate.). Amatller owned a chocolate business, and the flower represented an almond blossom since chocolate pairs nicely with almonds. However, there is a lot of debate on it and we will probably never know the truth.
+**Some speculate that renowned Catalan architect Josep Puig i Cadafalch played a role**, drawing inspiration from the almond flower motif of his iconic build Casa Amatller (Tip: this house is next to Casa Batlló and because it's less popular it's such an enjoyable visit which also includes a free sample of chocolate.).
+
+Amatller owned a chocolate business, and the flower represented an almond blossom since chocolate pairs nicely with almonds. However, there is a lot of debate on it and we will probably never know the truth.
 
 ![Casa Ametller panot](./panot-casa-ametller.png)
 
@@ -73,7 +75,7 @@ Anyone visiting the city will inevitably walk on a panot at some point during t
 
 ![panot B s Barcelona](./panot-b-Barcelona-2.png)
 
-In general, it is best to look up, but while in Barcelona have a peak on where you’re stepping you might discover other panot styles as I did.
+In general, it is best to look up, but while in Barcelona try to also have a peak on where you’re stepping as you might discover other panot styles as I did.
 
 ![new panot style](./new-panot-style.png)
 
