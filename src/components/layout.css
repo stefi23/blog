@@ -163,8 +163,8 @@ dfn {
   margin-bottom: 8px;
 }
 
-.post-innerContent-info-highlight:hover,
-.sideBar-tags-highlight:hover {
+a.post-innerContent-info-highlight:hover,
+a.sideBar-tags-highlight:hover {
   color: var(--highlight-color);
   background: var(--secondary-color);
   text-decoration: none;
@@ -782,9 +782,8 @@ pre tt:after {
   }
 }
 
-a,
 .articleLink {
-  color: var(--primary-color) !important;
+  color: var(--primary-color);
   text-decoration: underline;
 }
 
@@ -1004,4 +1003,12 @@ a:focus {
   margin-bottom: 0;
   align-items: center;
   text-align: center;
+}
+
+body a {
+  color: var(--secondary-color);
+}
+
+body a:hover {
+  color: var(--secondary-color);
 }
