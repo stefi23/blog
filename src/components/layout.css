@@ -165,7 +165,7 @@ dfn {
 
 .post-innerContent-info-highlight:hover,
 .sideBar-tags-highlight:hover {
-  color: var(--highlight-color);
+  color: var(--highlight-color) !important;
   background: var(--secondary-color);
   text-decoration: none;
 }
@@ -784,7 +784,7 @@ pre tt:after {
 
 a,
 .articleLink {
-  color: var(--primary-color) !important;
+  color: var(--primary-color);
   text-decoration: underline;
 }
 
