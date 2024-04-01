@@ -1008,3 +1008,7 @@ a:focus {
 body a {
   color: var(--secondary-color);
 }
+
+body a:hover {
+  color: var(--secondary-color);
+}
