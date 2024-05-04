@@ -3,7 +3,7 @@ title: "Best Ice Cream Spots in Barcelona"
 date: "2024-05-04"
 tags: ["Barcelona", "foodie", "ice-cream", "map"]
 categories: "Barcelona"
-featuredImage: ""
+featuredImage: "Discover Barcelona's top ice cream spots including Gianduia, La Lletera, Paral·lelo, Gelats amb Sol, DeLaCream etc. "
 description: "./ice-cream-Barcelona.jpeg"
 ---
 
