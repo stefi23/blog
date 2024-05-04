@@ -1,7 +1,7 @@
 ---
 title: "🍦 Best Ice Cream Spots in Barcelona"
 date: "2024-05-04"
-tags: ["Barcelona", "foodie", "ice-cream"]
+tags: ["Barcelona", "foodie", "ice-cream", "map"]
 categories: "Barcelona"
 featuredImage: ""
 description: "./ice-cream-Barcelona.jpeg"
