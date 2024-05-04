@@ -50,7 +50,7 @@ const Categories = ({ pageContext, data }) => {
                     category: {category}
                   </Link>
                 </span>
-                <p>
+                <p className="post-innerContent-info-tags">
                   {tags.map(tag => (
                     <Link
                       to={`/tags/${tag.toLowerCase()}/`}

@@ -108,6 +108,8 @@ dfn {
 
 .post-innerContent-info-tags {
   margin-bottom: 0;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .post-innerContent-info-link {
@@ -475,7 +477,7 @@ p {
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
-  padding-top: 1rem;
+  margin-bottom: 1.75rem;
 }
 
 figure {
