@@ -70,3 +70,5 @@ I'm not a fan but if you want to get a vegan ice cream everything flavor here is
 This is not a typical small-business ice cream shop from Barcelona; instead, it's part of a chain that I first tried and enjoyed in Sevilla. They'll shape your ice cream as a rose and it's a bit more expensive than the other places. You'll find a few in the area of Las Ramblas.
 
 Do you have a favorite spot that didn't make the list? Do you have any comments to share? If so please add them <a href='https://form.typeform.com/to/uwP9ZmYM' target='_blank'>here.</a> Thanks!
+
+Enjoy 🍦
