@@ -13,7 +13,7 @@ Get the Google map <a href='https://www.google.com/maps/d/viewer?mid=1v9pdv7vsfM
 
 <div class="embed-responsive embed-responsive-4by3">
 <iframe src="https://www.google.com/maps/d/embed?mid=1v9pdv7vsfMiQct1UY5CHAvmP7zWxFNM&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
-</div>
+</div><br />
 
 ## <a href='https://maps.app.goo.gl/j7nZvtQhqJbhDpWe8' target="_blank">1. Gianduia - Gothic Quarter</a>
 
