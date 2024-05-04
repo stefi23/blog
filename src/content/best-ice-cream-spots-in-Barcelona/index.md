@@ -19,7 +19,7 @@ Get the Google map <a href='https://www.google.com/maps/d/viewer?mid=1v9pdv7vsfM
 
 Ranking ice creams can be challenging, but I would place this one among the top-top choices. It's a small Italian ice cream spot minutes away from the Cathedral. Here you'll find Italian 🇮🇹 ice cream and a very friendly owner.
 
-## <a href='https://maps.app.goo.gl/nhUnVweVazw8YxwCA' target="_blank">2. La Lletera Barcelona de Gràcia Helados Artesanos</a>
+## <a href='https://maps.app.goo.gl/nhUnVweVazw8YxwCA' target="_blank">2. La Lletera Barcelona de Gràcia Helados Artesanos - Gracia</a>
 
 As the title suggests, this place is located in Gracia and is a convenient option if you're walking down from Park Guell or Casa Vicens. If you fancy trying out something new order the Orxata, also known as horchata outside of Catalunya, it's a traditional Spanish drink made from ground almonds, sesame seeds, rice, or tigernuts, sweetened and flavored with cinnamon. This drink is originally from Valencia.
 
