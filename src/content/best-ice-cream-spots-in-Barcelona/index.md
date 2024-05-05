@@ -7,7 +7,7 @@ featuredImage: "./ice-cream-Barcelona.jpeg"
 description: "Discover Barcelona's top ice cream spots including Gianduia, La Lletera, Paral·lelo, Gelats amb Sol, DeLaCream .."
 ---
 
-With summer just around the corner, it was time to put together this list including some of the ice cream I ate in Barcelona. Whether you are visiting Barcelona or you live here and you want to get some good ice cream these places are a must-try.
+With summer just around the corner, it was time to put together this list including some of the ice cream places in Barcelona where I enjoyed really good ice cream. Whether you are visiting Barcelona or you live here and you want to get some good ice cream these places are a must-try.
 
 Get the Google map <a href='https://www.google.com/maps/d/viewer?mid=1v9pdv7vsfMiQct1UY5CHAvmP7zWxFNM&ll=41.39321318240926%2C2.1799373499999852&z=15' target='_blank'>here.</a>
 
